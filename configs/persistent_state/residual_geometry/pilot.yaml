@@ -1,0 +1,18 @@
+mode: pilot
+run_name: residual_geometry_pilot
+output_base: outputs/persistent_state_residual_geometry
+context_processing:
+  min_tokens: 1024
+  max_tokens: 1024
+  add_special_tokens: false
+autocorr:
+  max_lag: 512
+runtime:
+  validate_sae_load: false
+residual_geometry:
+  max_tokens: 1024
+  max_lag: 512
+  projections:
+    batch_size: 32
+    chunk_documents: 128
+    storage_dtype: float16

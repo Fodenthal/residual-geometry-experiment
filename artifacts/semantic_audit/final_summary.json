@@ -1,0 +1,29 @@
+{
+  "s0": {
+    "s1_status": "SAE_BRIDGE_NOT_EVALUATED",
+    "s2_authorized": true,
+    "slow_basis_status": "ORIGINAL_FROZEN",
+    "status": "PASS"
+  },
+  "s2": {
+    "note": "S4 remains unimplemented until a separate gate-aware micro-spec is scientifically justified.",
+    "profile": "PROFILE_DURABLE_SEMANTIC",
+    "s3_authorized": true,
+    "s4_authorized": false,
+    "semantic_positive": true,
+    "status": "PASS",
+    "stop": false,
+    "structural_positive": false,
+    "test_access_count": 1
+  },
+  "s3": {
+    "full_validation_gain": 0.025727232683462886,
+    "observed_mean_squared_canonical_correlation": 0.4546300107196578,
+    "reason_s4_not_authorized": "R1 requires a separate targeted causal micro-spec after descriptive review.",
+    "s4_authorized": false,
+    "selected_rank": 2,
+    "shuffle_q95": 0.19813105259517608,
+    "stable": true,
+    "status": "SEM2_COMPACT_STABLE_SEMANTIC_SUBSPACE"
+  }
+}

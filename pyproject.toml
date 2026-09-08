@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "residual-geometry-experiment"
+version = "0.1.0"
+description = "Research artifact for residual-stream state-lifetime geometry experiments"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Felix Odenthal" },
+]
+dependencies = [
+    "torch>=2.4.1,<2.12",
+    "transformers==4.45.2",
+    "transformer-lens==2.6.0",
+    "typeguard==4.4.4",
+    "numpy==1.26.4",
+    "pandas==2.2.2",
+    "pyarrow==17.0.0",
+    "scikit-learn==1.5.2",
+    "pydantic==2.8.2",
+    "pyyaml==6.0.2",
+    "matplotlib==3.9.2",
+    "tqdm==4.66.5",
+    "scipy==1.14.1",
+    "datasets==2.21.0",
+    "accelerate==0.34.2",
+    "einops==0.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.3",
+    "pytest-cov==5.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
