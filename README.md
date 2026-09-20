@@ -40,6 +40,8 @@ The completed R1.3–R1.11 audit and follow-up sequence is available in
 [`followups/slow-subspace-state/`](followups/slow-subspace-state/README.md),
 plus the separate predictive-carrier line in
 [`followups/predictive-carriers/`](followups/predictive-carriers/README.md).
+The intermittent-channel pilot is published in
+[`followups/intermittent-channel-audit/`](followups/intermittent-channel-audit/README.md).
 It includes the frozen protocols, executable research code, focused tests,
 compact decision records, negative results, and the estimator-provenance
 correction that distinguishes the canonical signed-TICA object from a later
@@ -59,6 +61,7 @@ appendix.md                                technical appendix in Markdown
 artifacts/semantic_audit/                  compact result and decision summaries
 followups/slow-subspace-state/             R1.3–R1.11 protocols, code, tests, and compact results
 followups/predictive-carriers/             Arm D predictive-carrier reports, specs, and compact results
+followups/intermittent-channel-audit/      Qualified frozen-projection pilot and locked protocol
 configs/persistent_state/residual_geometry experiment configurations
 docs/                                     methods, run summary, frozen protocol
 figures/                                  publication figures
