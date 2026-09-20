@@ -19,6 +19,13 @@ directions form a compact subspace, and what information that subspace carries.
   This was statistically positive for the frozen coarse-topic endpoint, but is
   only moderate evidence for a semantic interpretation because topic may proxy
   other durable document properties such as source or style.
+- Post-publication experiments recovered the signed slow region independently
+  across document halves, separated content from measured source/style
+  fingerprints, and found a broader graded slow shoulder extending to roughly
+  rank 64.
+- In a controlled prefix intervention, a frozen semantic coordinate retained a
+  donor-topic-directed effect after 64–256 identical continuation tokens,
+  whereas the matched PCA semantic effect rapidly disappeared.
 
 ![Held-out topic-prediction gain for Slow-31, PCA-31, and random rank-31 controls](figures/topic-prediction-gain.png)
 
@@ -27,11 +34,28 @@ directions form a compact subspace, and what information that subspace carries.
 The complete [technical appendix](appendix.md) is maintained
 as Markdown so that the public version has a single canonical source.
 
+## Post-publication follow-ups
+
+The completed R1.3–R1.11 audit and follow-up sequence is available in
+[`followups/slow-subspace-state/`](followups/slow-subspace-state/README.md).
+It includes the frozen protocols, executable research code, focused tests,
+compact decision records, negative results, and the estimator-provenance
+correction that distinguishes the canonical signed-TICA object from a later
+unsigned optimizer.
+
+The strongest follow-up result changes only the first 256 tokens and then holds
+the continuation exactly fixed. At the preregistered 64-token horizon, the
+donor-directed semantic difference-in-differences was 0.9256 with a 95%
+document-bootstrap interval of [0.6764, 1.1642]. The effect remained positive
+at 256 tokens. This establishes a persistent semantic representation induced by
+history; it does not establish downstream causal use of that representation.
+
 ## Repository layout
 
 ```text
 appendix.md                                technical appendix in Markdown
 artifacts/semantic_audit/                  compact result and decision summaries
+followups/slow-subspace-state/             R1.3–R1.11 protocols, code, tests, and compact results
 configs/persistent_state/residual_geometry experiment configurations
 docs/                                     methods, run summary, frozen protocol
 figures/                                  publication figures
