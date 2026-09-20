@@ -1,0 +1,116 @@
+{
+  "amendment_ledger": [
+    {
+      "amends": "source sections 8.1 and 8.2",
+      "change": "the multi-horizon operators are built from the persistence-residualized cross-covariance C_k = E[x_t (y_{t,k} - b_k(x_t))^T], and Q-W whitens by the covariance of that same residualized object; the raw-C_k form is a diagnostic",
+      "date": "2026-08-12",
+      "id": "A1",
+      "rationale": "the score is a gain over persistence, so an objective built on the raw target is rewarded for predicting the present, which dominates lags 1 and 2 and readmits the energy confound the whitened metric was chosen to exclude",
+      "when": "before any R2.4 development number was computed"
+    },
+    {
+      "amends": "source section 8.3",
+      "change": "each lag's operator term is trace-normalized before summing",
+      "date": "2026-08-12",
+      "id": "A2",
+      "rationale": "equal weights apply to objective terms rather than to scores and cross-covariance magnitude decays with lag, so the unnormalized sum yields a short-lag carrier wearing a multi-horizon label",
+      "when": "before any R2.4 development number was computed"
+    },
+    {
+      "amends": "source sections 5.3, 5.4 and 12.1",
+      "change": "deletion family F (energy-matched at varying rank) is REQUIRED and is the primary L-axis comparator, with the dose-response curve as continuous context",
+      "date": "2026-08-12",
+      "id": "A3",
+      "rationale": "the impossibility argument forbids matching rank and captured variance at once near the variance-maximizing subspace, not matching variance at higher rank",
+      "when": "before any R2.4 development number was computed"
+    },
+    {
+      "amends": "source sections 5.4 and 19",
+      "change": "step C6b replays the frozen deletion family on CONFIRM-Q; until it runs, L1_GEOMETRY_SPECIFIC_DELETION may not be emitted",
+      "date": "2026-08-12",
+      "id": "A4",
+      "rationale": "section 5.4 requires the replay but the section 19 C-sequence has no step for it, and C6 answers a different question",
+      "when": "before any R2.4 development number was computed"
+    },
+    {
+      "amends": "source sections 8 and 17",
+      "change": "ridge stability is a reported axis: both estimators are refit across the frozen rho grid and the subspace correlation between variants decides R1/R0",
+      "date": "2026-08-12",
+      "id": "A5",
+      "rationale": "a ridge artifact appears identically in both document halves and therefore passes split-half stability, so that machinery structurally cannot detect it",
+      "when": "before any R2.4 development number was computed"
+    },
+    {
+      "amends": "source section 18",
+      "change": "an anisotropic no-prediction world Q-S6 is added to the required worlds",
+      "date": "2026-08-12",
+      "id": "A6",
+      "rationale": "Q-S0 is isotropic and Q-S3 only shows Q-W can find a real low-variance carrier; nothing shows it does not manufacture one from a poorly estimated tail",
+      "when": "before any R2.4 development number was computed"
+    },
+    {
+      "amends": "source sections 7.2 and 7.3",
+      "change": "eta_rank is taken against a multi-horizon SHARED-source ceiling; the per-lag free-source reduced-rank ceiling is kept and labelled as a looser upper bound",
+      "date": "2026-08-12",
+      "id": "A7",
+      "rationale": "the per-lag ceiling is not subject to the shared-subspace constraint every candidate carrier carries, and the penalty grows with the spread of K_Q",
+      "when": "before any R2.4 development number was computed"
+    },
+    {
+      "amends": "source sections 4.3 and 15",
+      "change": "sizing is decided by split-half MSC at rank 64, the slowest-converging endpoint, and the reproduction requirement gets a numeric threshold frozen at S6",
+      "date": "2026-08-12",
+      "id": "A8",
+      "rationale": "the stability endpoint gates the label that decides the handoff and converges far more slowly than predictive gain, and 'material magnitude' would otherwise be settled after reading the test",
+      "when": "before any R2.4 development number was computed"
+    },
+    {
+      "amends": "source sections 14 and 25",
+      "change": "the autonomy stage receiving this carrier either draws a fresh pool or takes composition statistics only from R2.4's untouched test split",
+      "date": "2026-08-12",
+      "id": "A9",
+      "rationale": "composition retention's denominator is the carrier's own predictive gain, so computing it where the carrier was fitted reintroduces the R2.3 denominator problem one stage later",
+      "when": "before any R2.4 development number was computed"
+    },
+    {
+      "amends": "amendment A3 and source sections 5.3 and 5.4",
+      "change": "the energy-matched deletion family is unattainable in the direction A3 assumed, and is replaced as primary L-axis comparator by a DOSE-MATCHED geometry contrast: at each attainable deleted-variance dose, a top-principal-direction deletion against a lowest-principal-direction deletion of the same dose",
+      "date": "2026-08-12",
+      "id": "A12",
+      "rationale": "the leading 16 directions hold about 0.672 of aperture variance, so every other direction together holds only about 0.328: no set of lower directions can reach the target's dose at any rank.  Matching dose downward instead of upward keeps A3's intent -- hold the energy fixed and vary the geometry -- inside what the spectrum allows, and it yields a curve rather than a single point",
+      "when": "decided from the DEV-Q deletion audit's variance arithmetic, before any confirmatory number existed"
+    },
+    {
+      "amends": "source sections 3, 7.3 and 9",
+      "change": "the primary score is the baseline-augmented gain -- the predictor is b_k(x_t) + D_{Q,k} Q^T x_t rather than D_{Q,k} Q^T x_t alone -- and source section 3's literal form is co-reported as gamma_raw",
+      "date": "2026-08-12",
+      "id": "A11",
+      "rationale": "under the literal form a rank-r carrier must also RECONSTRUCT the persistent component from r dimensions, so its gain over persistence is large and negative at every rank below the aperture; every efficiency ratio of source section 7.3 then divides a negative number by a positive one and the compression summary of section 9 is undefined.  The augmented form is also exactly the quantity amendment A1's residualized objective optimizes, so estimator and score agree",
+      "when": "decided from a synthetic implementation smoke world, before any DEV-Q or CONFIRM-Q number was computed"
+    },
+    {
+      "amends": "source sections 5, 13.1 and 19",
+      "change": "the P0 identifier collision is resolved: S0..S6 name development steps, C0..C9b name confirmatory steps, D-AUDIT names the variance-deletion audit, and P0_/P1_ remain P-axis result labels",
+      "date": "2026-08-12",
+      "id": "A10",
+      "rationale": "the same class of drift made an earlier specification's execution order disagree with its own section labels and produced a real defect",
+      "when": "before any R2.4 development number was computed"
+    }
+  ],
+  "capture_sha256": "e287d53a7c5d9f9c4b2141de9fbedb47b6514e1219f23dbe8928a2d4e4d74959",
+  "environment": {
+    "cpu_count": 24,
+    "numpy": "2.3.4",
+    "protocol_revision": "arm_d_r2_2"
+  },
+  "frozen_record": "results/frozen_r2_4.json",
+  "handoff_case": "D",
+  "labels": {
+    "G": "G1_METRIC_CONCORDANT_CARRIER",
+    "I": "I3_REDUNDANT_CARRIER_FAMILY",
+    "L": "L1_GEOMETRY_SPECIFIC_DELETION",
+    "P": "P0_NO_COMPACT_PREDICTIVE_COMPRESSION",
+    "R": "R0_RIDGE_DEPENDENT_CARRIER"
+  },
+  "wall_seconds": 1627.1887691020966
+}

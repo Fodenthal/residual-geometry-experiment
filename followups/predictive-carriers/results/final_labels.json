@@ -1,0 +1,126 @@
+{
+  "evidence": {
+    "complement_rank": 32,
+    "frozen_ranks": {
+      "Q_E": 16,
+      "Q_W": 64
+    },
+    "labels": {
+      "G": "G1_METRIC_CONCORDANT_CARRIER",
+      "I": "I3_REDUNDANT_CARRIER_FAMILY",
+      "L": "L1_GEOMETRY_SPECIFIC_DELETION",
+      "P": "P0_NO_COMPACT_PREDICTIVE_COMPRESSION",
+      "R": "R0_RIDGE_DEPENDENT_CARRIER"
+    },
+    "records": {
+      "G": {
+        "evidence": {
+          "bootstrap_self_overlap_mean": 0.39693015641640544,
+          "cross_metric_msc": 0.472495895349524,
+          "metric_concordance_fraction": 0.8,
+          "note": "no consensus basis is manufactured when the two metrics disagree; both are frozen as separate predictive representations",
+          "rank_energy": 16,
+          "rank_whitened": 64,
+          "threshold": 0.31754412513312436
+        },
+        "label": "G1_METRIC_CONCORDANT_CARRIER",
+        "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+        "specification_section": "R2.4 source section 13 (independent result axes)"
+      },
+      "I": {
+        "evidence": {
+          "complement_carrier_stable": true,
+          "complement_relative_gain": 0.9106493477248563,
+          "rank_matched_deletion_relative_gain": 0.9540097108762086,
+          "redundancy_relative_high": 0.5,
+          "redundancy_relative_low": 0.2
+        },
+        "label": "I3_REDUNDANT_CARRIER_FAMILY",
+        "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+        "specification_section": "R2.4 source section 13 (independent result axes)"
+      },
+      "L": {
+        "evidence": {
+          "comparison": {
+            "bootstrap": {
+              "fraction_above_zero": 1.0,
+              "mean": 0.03358717049203027,
+              "q05": 0.02368704299571402,
+              "q50": 0.033525164430920615,
+              "q95": 0.04366136516241926,
+              "replicates": 2000
+            },
+            "clears_margin": true,
+            "delta_top_more_destructive": 0.03354874861113999,
+            "dose": 0.3,
+            "dose_target": 0.3,
+            "lower_deleted_rank": 237,
+            "lower_deleted_variance": 0.3014606095637437,
+            "lower_surviving_gain": 0.16886119609184452,
+            "margin": 0.010586743328956085,
+            "note": "the largest dose both constructions can reach; positive delta means removing top-variance directions destroys more predictive gain than removing lower directions carrying the same aperture variance",
+            "top_deleted_rank": 2,
+            "top_deleted_variance": 0.32022232087301483,
+            "top_surviving_gain": 0.13531244748070453
+          },
+          "margin": 0.010586743328956085
+        },
+        "label": "L1_GEOMETRY_SPECIFIC_DELETION",
+        "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+        "specification_section": "R2.4 unified section 7 (deletion, amendments A3 and A4)"
+      },
+      "P": {
+        "evidence": {
+          "best_gain_within_grid": 0.19255619503592428,
+          "compression_fraction": 0.9,
+          "fraction_of_full_aperture_ceiling_at_r90": 0.6352388444640764,
+          "note": "the 90% number is a compression summary, not a significance threshold; the full rank curve is reported beside this label",
+          "r90": 64,
+          "rank_curve": {
+            "1": 0.06688981704601729,
+            "2": 0.077010672229417,
+            "4": 0.09082499958730092,
+            "8": 0.11219010162385845,
+            "16": 0.13450221197847664,
+            "32": 0.15906719598002936,
+            "64": 0.19255619503592428
+          },
+          "threshold": 0.17330057553233186
+        },
+        "label": "P0_NO_COMPACT_PREDICTIVE_COMPRESSION",
+        "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+        "r90": 64,
+        "specification_section": "R2.4 source section 13 (independent result axes)"
+      },
+      "R": {
+        "evidence": {
+          "min_msc_adjacent_decade": 0.6325250380930977,
+          "min_msc_over_grid": 0.45165075604492344,
+          "msc_against_selected": {
+            "0.0001": 0.45165075604492344,
+            "0.001": 0.471044160283748,
+            "0.01": 0.6325250380930977,
+            "1": 0.691001780030997,
+            "10": 0.5895197420123528
+          },
+          "rank": 64,
+          "ridge_stability_min": 0.8,
+          "selected_rho": 0.1
+        },
+        "label": "R0_RIDGE_DEPENDENT_CARRIER",
+        "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+        "specification_section": "R2.4 unified section 5 (ridge scales, amendment A5)"
+      }
+    },
+    "step": "C7",
+    "test_unread": true,
+    "validation_reference": {
+      "multi_horizon_gain": 0.19255619503592428,
+      "split_half_msc": 0.36048708315722827
+    }
+  },
+  "evidential_status": "CONFIRMATORY_FRESH_POOL",
+  "label": "R2_4_LABELS_FROZEN",
+  "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+  "specification_section": "R2.4 source section 13 (independent result axes)"
+}

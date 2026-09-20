@@ -1,0 +1,577 @@
+{
+  "evidence": {
+    "amendment_ledger": [
+      {
+        "amends": "source sections 8.1 and 8.2",
+        "change": "the multi-horizon operators are built from the persistence-residualized cross-covariance C_k = E[x_t (y_{t,k} - b_k(x_t))^T], and Q-W whitens by the covariance of that same residualized object; the raw-C_k form is a diagnostic",
+        "date": "2026-08-12",
+        "id": "A1",
+        "rationale": "the score is a gain over persistence, so an objective built on the raw target is rewarded for predicting the present, which dominates lags 1 and 2 and readmits the energy confound the whitened metric was chosen to exclude",
+        "when": "before any R2.4 development number was computed"
+      },
+      {
+        "amends": "source section 8.3",
+        "change": "each lag's operator term is trace-normalized before summing",
+        "date": "2026-08-12",
+        "id": "A2",
+        "rationale": "equal weights apply to objective terms rather than to scores and cross-covariance magnitude decays with lag, so the unnormalized sum yields a short-lag carrier wearing a multi-horizon label",
+        "when": "before any R2.4 development number was computed"
+      },
+      {
+        "amends": "source sections 5.3, 5.4 and 12.1",
+        "change": "deletion family F (energy-matched at varying rank) is REQUIRED and is the primary L-axis comparator, with the dose-response curve as continuous context",
+        "date": "2026-08-12",
+        "id": "A3",
+        "rationale": "the impossibility argument forbids matching rank and captured variance at once near the variance-maximizing subspace, not matching variance at higher rank",
+        "when": "before any R2.4 development number was computed"
+      },
+      {
+        "amends": "source sections 5.4 and 19",
+        "change": "step C6b replays the frozen deletion family on CONFIRM-Q; until it runs, L1_GEOMETRY_SPECIFIC_DELETION may not be emitted",
+        "date": "2026-08-12",
+        "id": "A4",
+        "rationale": "section 5.4 requires the replay but the section 19 C-sequence has no step for it, and C6 answers a different question",
+        "when": "before any R2.4 development number was computed"
+      },
+      {
+        "amends": "source sections 8 and 17",
+        "change": "ridge stability is a reported axis: both estimators are refit across the frozen rho grid and the subspace correlation between variants decides R1/R0",
+        "date": "2026-08-12",
+        "id": "A5",
+        "rationale": "a ridge artifact appears identically in both document halves and therefore passes split-half stability, so that machinery structurally cannot detect it",
+        "when": "before any R2.4 development number was computed"
+      },
+      {
+        "amends": "source section 18",
+        "change": "an anisotropic no-prediction world Q-S6 is added to the required worlds",
+        "date": "2026-08-12",
+        "id": "A6",
+        "rationale": "Q-S0 is isotropic and Q-S3 only shows Q-W can find a real low-variance carrier; nothing shows it does not manufacture one from a poorly estimated tail",
+        "when": "before any R2.4 development number was computed"
+      },
+      {
+        "amends": "source sections 7.2 and 7.3",
+        "change": "eta_rank is taken against a multi-horizon SHARED-source ceiling; the per-lag free-source reduced-rank ceiling is kept and labelled as a looser upper bound",
+        "date": "2026-08-12",
+        "id": "A7",
+        "rationale": "the per-lag ceiling is not subject to the shared-subspace constraint every candidate carrier carries, and the penalty grows with the spread of K_Q",
+        "when": "before any R2.4 development number was computed"
+      },
+      {
+        "amends": "source sections 4.3 and 15",
+        "change": "sizing is decided by split-half MSC at rank 64, the slowest-converging endpoint, and the reproduction requirement gets a numeric threshold frozen at S6",
+        "date": "2026-08-12",
+        "id": "A8",
+        "rationale": "the stability endpoint gates the label that decides the handoff and converges far more slowly than predictive gain, and 'material magnitude' would otherwise be settled after reading the test",
+        "when": "before any R2.4 development number was computed"
+      },
+      {
+        "amends": "source sections 14 and 25",
+        "change": "the autonomy stage receiving this carrier either draws a fresh pool or takes composition statistics only from R2.4's untouched test split",
+        "date": "2026-08-12",
+        "id": "A9",
+        "rationale": "composition retention's denominator is the carrier's own predictive gain, so computing it where the carrier was fitted reintroduces the R2.3 denominator problem one stage later",
+        "when": "before any R2.4 development number was computed"
+      },
+      {
+        "amends": "amendment A3 and source sections 5.3 and 5.4",
+        "change": "the energy-matched deletion family is unattainable in the direction A3 assumed, and is replaced as primary L-axis comparator by a DOSE-MATCHED geometry contrast: at each attainable deleted-variance dose, a top-principal-direction deletion against a lowest-principal-direction deletion of the same dose",
+        "date": "2026-08-12",
+        "id": "A12",
+        "rationale": "the leading 16 directions hold about 0.672 of aperture variance, so every other direction together holds only about 0.328: no set of lower directions can reach the target's dose at any rank.  Matching dose downward instead of upward keeps A3's intent -- hold the energy fixed and vary the geometry -- inside what the spectrum allows, and it yields a curve rather than a single point",
+        "when": "decided from the DEV-Q deletion audit's variance arithmetic, before any confirmatory number existed"
+      },
+      {
+        "amends": "source sections 3, 7.3 and 9",
+        "change": "the primary score is the baseline-augmented gain -- the predictor is b_k(x_t) + D_{Q,k} Q^T x_t rather than D_{Q,k} Q^T x_t alone -- and source section 3's literal form is co-reported as gamma_raw",
+        "date": "2026-08-12",
+        "id": "A11",
+        "rationale": "under the literal form a rank-r carrier must also RECONSTRUCT the persistent component from r dimensions, so its gain over persistence is large and negative at every rank below the aperture; every efficiency ratio of source section 7.3 then divides a negative number by a positive one and the compression summary of section 9 is undefined.  The augmented form is also exactly the quantity amendment A1's residualized objective optimizes, so estimator and score agree",
+        "when": "decided from a synthetic implementation smoke world, before any DEV-Q or CONFIRM-Q number was computed"
+      },
+      {
+        "amends": "source sections 5, 13.1 and 19",
+        "change": "the P0 identifier collision is resolved: S0..S6 name development steps, C0..C9b name confirmatory steps, D-AUDIT names the variance-deletion audit, and P0_/P1_ remain P-axis result labels",
+        "date": "2026-08-12",
+        "id": "A10",
+        "rationale": "the same class of drift made an earlier specification's execution order disagree with its own section labels and produced a real defect",
+        "when": "before any R2.4 development number was computed"
+      }
+    ],
+    "analysis_object": {
+      "aperture_width": 256,
+      "condition": "main",
+      "lags": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "long_horizon_sensitivity_lags": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "suffix_length": 64
+    },
+    "code_sha256": {
+      "scripts/arm_d_r24/01_dev.py": "0a0b931cd8acd1255fbf79d030fff1877b0bcefa06666f287a5cc39948f412c5",
+      "scripts/arm_d_r24/02_freeze.py": "17e1d149d4357d80c079247f9a2d2d9fa169885cf211cb82b49b4402637e2338",
+      "scripts/arm_d_r24/03_capture.py": "b083b56f90b6b640649f88dacdad607ed6078c56e94b54a0855bd7069303c411",
+      "scripts/arm_d_r24/04_confirm.py": "ce8310dd8235e56b5b4570da58ce8a6bd1ff6749dd12efcd7ab148fbc5f2d3fb",
+      "scripts/arm_d_r24/_common.py": "69c8d1f7230c7b40ff3989cc069ff043a78d46746fa5ff13cc26110a03f4dbfb",
+      "src/arm_d_r24/__init__.py": "dec87f2001479724eeff2a3494797da508dd7ab759d1e440eb1ab1124edbb887",
+      "src/arm_d_r24/contract.py": "0bab96fbb9eb79729f2d3c0297c6de92a41f1f4b7794ed4f4a27cd4264d7c2ae",
+      "src/arm_d_r24/data.py": "cd09cf472229a7db25f6d8fdf52012a939613eb41a871aaec483cac75bdbde6c",
+      "src/arm_d_r24/decide.py": "13276e4807f78d24b83a4ec49b068984a1863b70b88514b40a6a5239925d6c73",
+      "src/arm_d_r24/deletion.py": "b704702342bc0478024980345be4dbf138f6f2b6e0ef251e3697824e7aa6219a",
+      "src/arm_d_r24/direction.py": "ffb89fd7cd72d8d05e06eaac068995963225cae799602911449c12101d49d963",
+      "src/arm_d_r24/estimators.py": "9669b3eaee61c34390b1be91d651c84c12fcd5c0e2697e680cdc8c8dec6117d6",
+      "src/arm_d_r24/geometry.py": "97ead96fd4ab84c96765a405bbe677fbff06ac159083142bf6616fa4823a44e4",
+      "src/arm_d_r24/scoring.py": "6e8b451c5e8848a73f5c130c0f4a6159993dd392aaf72a842e797cba2e559897",
+      "src/arm_d_r24/sizing.py": "9586669b46ec3c3311b29a77323a37108aa5119b6a6a2c116cdda19c173fcda3",
+      "src/arm_d_r24/stability.py": "b26c2b1eacf33c73749df4c0b40f84064ede11dd211dd4cb6eed3abb20f6f8ba",
+      "src/arm_d_r24/worlds.py": "bb6af57ed9b4c0abc30fc7dfcab3a4243fa9601139eab13dbb70d289468b23b2"
+    },
+    "code_sha256_combined": "3e88fa0ea4910e68cba5acd4ab75900f0e63064c540fed2a25c77035c8f84ecd",
+    "confirmatory_documents": 2000,
+    "confirmatory_split_fractions": {
+      "fitA": 0.35,
+      "fitB": 0.35,
+      "test": 0.15,
+      "validation": 0.15
+    },
+    "deletion_dose_grid": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "development_evidence": {
+      "dev_cross_metric_msc": {
+        "1": 0.5820447961808566,
+        "16": 0.44295779703490856,
+        "2": 0.2973202847556011,
+        "32": 0.49962211301949283,
+        "4": 0.32198767672247347,
+        "64": 0.6485109687544253,
+        "8": 0.42452038656538016
+      },
+      "dev_deletion_primary_comparison": {
+        "bootstrap": {
+          "fraction_above_zero": 1.0,
+          "mean": 0.04385496513668867,
+          "q05": 0.03555503259298349,
+          "q50": 0.04378394312882085,
+          "q95": 0.05220033193404447,
+          "replicates": 2000
+        },
+        "clears_margin": true,
+        "delta_top_more_destructive": 0.043871690396756424,
+        "dose": 0.3,
+        "dose_target": 0.3,
+        "lower_deleted_rank": 238,
+        "lower_deleted_variance": 0.30837220010850847,
+        "lower_surviving_gain": 0.18122758906917788,
+        "margin": 0.0,
+        "note": "the largest dose both constructions can reach; positive delta means removing top-variance directions destroys more predictive gain than removing lower directions carrying the same aperture variance",
+        "top_deleted_rank": 2,
+        "top_deleted_variance": 0.32192900145391484,
+        "top_surviving_gain": 0.13735589867242146
+      },
+      "dev_energy_match_attainability": {
+        "attained": false,
+        "maximum_attainable_lower_variance": 0.32851674169833067,
+        "note": "amendment A12: the leading directions hold more aperture variance than every other direction combined, so no lower-direction deletion reaches the target's dose at any rank; the comparison is made at attainable doses instead",
+        "rank_used": 240,
+        "target_variance": 0.6714832583016688
+      },
+      "dev_rank_curve_energy": {
+        "1": 0.08432755390472867,
+        "16": 0.18365102219033444,
+        "2": 0.1029625069332795,
+        "32": 0.1964647131149944,
+        "4": 0.1275259194492014,
+        "64": 0.20150359632461304,
+        "8": 0.15568505107385344
+      },
+      "dev_rank_curve_whitened": {
+        "1": 0.0822893718384174,
+        "16": 0.1477892255846114,
+        "2": 0.0938261892913895,
+        "32": 0.16984067379517848,
+        "4": 0.10850715876121864,
+        "64": 0.20407428135328237,
+        "8": 0.1289780547545541
+      },
+      "dev_split_half_msc": {
+        "Q_E": {
+          "1": {
+            "analytic_haar_expectation": 0.00390625,
+            "max_principal_angle_degrees": 71.9913868231973,
+            "mean_subspace_correlation": 0.09557988184821363,
+            "median_principal_angle_degrees": 71.9913868231973,
+            "min_principal_angle_degrees": 71.9913868231973
+          },
+          "16": {
+            "analytic_haar_expectation": 0.0625,
+            "max_principal_angle_degrees": 88.77485253438692,
+            "mean_subspace_correlation": 0.12521933827902093,
+            "median_principal_angle_degrees": 71.76226141299733,
+            "min_principal_angle_degrees": 50.63842390854041
+          },
+          "2": {
+            "analytic_haar_expectation": 0.0078125,
+            "max_principal_angle_degrees": 82.23291829925304,
+            "mean_subspace_correlation": 0.0707061066255659,
+            "median_principal_angle_degrees": 75.84453717619223,
+            "min_principal_angle_degrees": 69.45615605313142
+          },
+          "32": {
+            "analytic_haar_expectation": 0.125,
+            "max_principal_angle_degrees": 89.94359619728863,
+            "mean_subspace_correlation": 0.17924039684025106,
+            "median_principal_angle_degrees": 68.36105010589611,
+            "min_principal_angle_degrees": 40.22888081255219
+          },
+          "4": {
+            "analytic_haar_expectation": 0.015625,
+            "max_principal_angle_degrees": 84.87632966840532,
+            "mean_subspace_correlation": 0.07300020631471124,
+            "median_principal_angle_degrees": 76.86589595564216,
+            "min_principal_angle_degrees": 65.92401271842505
+          },
+          "64": {
+            "analytic_haar_expectation": 0.25,
+            "max_principal_angle_degrees": 89.82305255445608,
+            "mean_subspace_correlation": 0.30992141898173375,
+            "median_principal_angle_degrees": 58.81780367542245,
+            "min_principal_angle_degrees": 26.398062786213156
+          },
+          "8": {
+            "analytic_haar_expectation": 0.03125,
+            "max_principal_angle_degrees": 88.71430663779914,
+            "mean_subspace_correlation": 0.10460406182659229,
+            "median_principal_angle_degrees": 75.85661546698904,
+            "min_principal_angle_degrees": 57.36749445569782
+          }
+        },
+        "Q_W": {
+          "1": {
+            "analytic_haar_expectation": 0.00390625,
+            "max_principal_angle_degrees": 58.301099740872154,
+            "mean_subspace_correlation": 0.2761032937605134,
+            "median_principal_angle_degrees": 58.301099740872154,
+            "min_principal_angle_degrees": 58.301099740872154
+          },
+          "16": {
+            "analytic_haar_expectation": 0.0625,
+            "max_principal_angle_degrees": 84.73106626875162,
+            "mean_subspace_correlation": 0.24382740540974213,
+            "median_principal_angle_degrees": 61.933473919832565,
+            "min_principal_angle_degrees": 38.70316506096905
+          },
+          "2": {
+            "analytic_haar_expectation": 0.0078125,
+            "max_principal_angle_degrees": 58.179073598856874,
+            "mean_subspace_correlation": 0.3618328688870843,
+            "median_principal_angle_degrees": 53.14945576223669,
+            "min_principal_angle_degrees": 48.11983792561651
+          },
+          "32": {
+            "analytic_haar_expectation": 0.125,
+            "max_principal_angle_degrees": 89.38587750318743,
+            "mean_subspace_correlation": 0.2529872997311346,
+            "median_principal_angle_degrees": 62.24956217167402,
+            "min_principal_angle_degrees": 33.32967472719856
+          },
+          "4": {
+            "analytic_haar_expectation": 0.015625,
+            "max_principal_angle_degrees": 80.896789400561,
+            "mean_subspace_correlation": 0.2779458445787484,
+            "median_principal_angle_degrees": 57.056186245477114,
+            "min_principal_angle_degrees": 45.34700032044588
+          },
+          "64": {
+            "analytic_haar_expectation": 0.25,
+            "max_principal_angle_degrees": 89.32203210180964,
+            "mean_subspace_correlation": 0.354189049451098,
+            "median_principal_angle_degrees": 54.08951475222864,
+            "min_principal_angle_degrees": 23.46463981047904
+          },
+          "8": {
+            "analytic_haar_expectation": 0.03125,
+            "max_principal_angle_degrees": 85.59659022247361,
+            "mean_subspace_correlation": 0.24923622602179407,
+            "median_principal_angle_degrees": 59.5096290988309,
+            "min_principal_angle_degrees": 41.62924795483762
+          }
+        }
+      },
+      "ridge_selection_at_grid_edge": false,
+      "selected_rho": 0.1,
+      "world_checks": {
+        "Q_S0_isotropic_null_declares_no_stable_carrier": true,
+        "Q_S1_energy_recovers_planted": true,
+        "Q_S1_whitened_recovers_planted": true,
+        "Q_S2_whitened_prefers_planted_over_high_variance": true,
+        "Q_S3_whitened_recovers_low_variance_carrier": true,
+        "Q_S5_metrics_select_different_carriers": true,
+        "Q_S6_anisotropic_null_declares_no_stable_carrier": true
+      },
+      "worlds_label": "WORLDS_PASSED"
+    },
+    "estimators": {
+      "co_reported": "Q_E (energy-weighted multi-horizon)",
+      "cross_covariance": "persistence-residualized (amendment A1)",
+      "forbidden": "no composition, semigroup, spectral-simplicity or causal-transport term enters either objective",
+      "lag_weighting": "trace-normalized, equal weights (amendment A2)",
+      "primary": "Q_W (covariance-whitened multi-horizon)"
+    },
+    "frozen_utc": "2026-08-12T22:18:26Z",
+    "largest_rank": 64,
+    "nulls": {
+      "association_destruction_replicates": 400,
+      "bootstrap_overlap_replicates": 200,
+      "gain_bootstrap_replicates": 2000,
+      "seed": 42
+    },
+    "primary_score": "gamma_augmented",
+    "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+    "rank_grid": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "rank_rule": "the SMALLEST rank reaching the frozen fraction of the nested rank-64 curve on VALIDATION documents, frozen before any test read",
+    "reference_rank": 16,
+    "reference_scoring_rho": 0.01,
+    "rho_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "ridge_rule": "resolved on fit documents only by document-grouped cross-validation of the whitened score at the reference rank, every candidate scored through one fixed reference metric",
+    "sizing": {
+      "candidates": [
+        2000,
+        4000,
+        8000
+      ],
+      "decision": {
+        "candidates": {
+          "2000": {
+            "documents": 2000,
+            "fit_half_documents": 700,
+            "gap_to_asymptote": -0.011243575999528244,
+            "predicted_gain_standard_error": 0.005236370660371571,
+            "predicted_split_half_msc": 0.35945967140729346,
+            "qualifies": true
+          },
+          "4000": {
+            "documents": 4000,
+            "fit_half_documents": 1400,
+            "gap_to_asymptote": -0.0056217879997641496,
+            "predicted_gain_standard_error": 0.003702673202755018,
+            "predicted_split_half_msc": 0.35383788340752936,
+            "qualifies": true
+          },
+          "8000": {
+            "documents": 8000,
+            "fit_half_documents": 2800,
+            "gap_to_asymptote": -0.002810893999882047,
+            "predicted_gain_standard_error": 0.0026181853301857857,
+            "predicted_split_half_msc": 0.35102698940764726,
+            "qualifies": true
+          }
+        },
+        "chosen_by_fallback": false,
+        "chosen_documents": 2000,
+        "endpoint": "split-half mean subspace correlation at rank 64 (amendment A8)",
+        "extrapolation_note": "DEV-Q supports fit halves up to 1000 documents, so the 4000 and 8000 candidates are extrapolations of the fitted 1/m form rather than measurements",
+        "msc_curve_fit": {
+          "asymptote_a": 0.3482160954077652,
+          "max_absolute_residual": 0.020015852404765,
+          "r_squared": 0.5864102504998834,
+          "slope_b": -7.870503199669781
+        },
+        "msc_tolerance": 0.05,
+        "rule": "the smallest candidate whose predicted split-half MSC at the largest rank is within msc_tolerance of the fitted asymptote AND whose predicted gain bootstrap standard error is at most se_max; otherwise the largest candidate",
+        "se_max": 0.01,
+        "standard_error_scale": 0.1385413453989824
+      },
+      "learning_curve": {
+        "gain_rank": 16,
+        "metric": "whitened",
+        "points": {
+          "1000": {
+            "fit_half_documents": 1000,
+            "gain_bootstrap_standard_error_mean": 0.004928516604848564,
+            "gain_mean": 0.13775338502290066,
+            "repeats": 6,
+            "split_half_msc_mean": 0.37610245101219997,
+            "split_half_msc_sd": 0.0015620519093652216,
+            "split_half_msc_values": [
+              0.3778558475173694,
+              0.3762190477903034,
+              0.3769661172455797,
+              0.375050885356483,
+              0.37697102496884277,
+              0.37355178319462135
+            ]
+          },
+          "150": {
+            "fit_half_documents": 150,
+            "gain_bootstrap_standard_error_mean": 0.008925399427118787,
+            "gain_mean": 0.08604882397026552,
+            "repeats": 6,
+            "split_half_msc_mean": 0.41157895360039526,
+            "split_half_msc_sd": 0.005414639761986236,
+            "split_half_msc_values": [
+              0.40983580254651697,
+              0.41305161675458324,
+              0.4145664929903612,
+              0.41788517913879675,
+              0.40196924338774953,
+              0.41216538678436354
+            ]
+          },
+          "250": {
+            "fit_half_documents": 250,
+            "gain_bootstrap_standard_error_mean": 0.008558974123362949,
+            "gain_mean": 0.10938343830868834,
+            "repeats": 6,
+            "split_half_msc_mean": 0.36942440391563885,
+            "split_half_msc_sd": 0.0041926680440073005,
+            "split_half_msc_values": [
+              0.3677355862240827,
+              0.3758903153954108,
+              0.3662197202804256,
+              0.36767301968584476,
+              0.3656487356923158,
+              0.37337904621575324
+            ]
+          },
+          "400": {
+            "fit_half_documents": 400,
+            "gain_bootstrap_standard_error_mean": 0.0068732773541237665,
+            "gain_mean": 0.13406048441248006,
+            "repeats": 6,
+            "split_half_msc_mean": 0.3492752442545684,
+            "split_half_msc_sd": 0.0049728766878875084,
+            "split_half_msc_values": [
+              0.3463088598622855,
+              0.35246131418949644,
+              0.34359849183853663,
+              0.350900164078484,
+              0.3456016631906832,
+              0.35678097236792494
+            ]
+          },
+          "600": {
+            "fit_half_documents": 600,
+            "gain_bootstrap_standard_error_mean": 0.006100961684523415,
+            "gain_mean": 0.14634171902007356,
+            "repeats": 6,
+            "split_half_msc_mean": 0.3553940087603617,
+            "split_half_msc_sd": 0.004536596275559818,
+            "split_half_msc_values": [
+              0.3628760543565356,
+              0.35291106056577304,
+              0.3544763004426863,
+              0.3568832101530556,
+              0.35593901698597513,
+              0.3492784100581444
+            ]
+          },
+          "800": {
+            "fit_half_documents": 800,
+            "gain_bootstrap_standard_error_mean": 0.005085656220390613,
+            "gain_mean": 0.13251170545614552,
+            "repeats": 6,
+            "split_half_msc_mean": 0.3619759405644524,
+            "split_half_msc_sd": 0.0014293191840097853,
+            "split_half_msc_values": [
+              0.36377804356652205,
+              0.3635119208811932,
+              0.3621751156799139,
+              0.3608885844414631,
+              0.36118969839730597,
+              0.36031228042031604
+            ]
+          }
+        },
+        "rank": 64,
+        "rho": 0.1
+      }
+    },
+    "specification_sha256": {
+      "source": "a566209ee26feaa74776801523a101368d249280973df896710e8ef69c9f26b2",
+      "unified": "c77f2b43795c9e96098fdbe76c4424139df97807dfa2df28f6e19e02a5601362"
+    },
+    "step": "S6",
+    "step_names": {
+      "C0": "capture fresh CONFIRM-Q documents",
+      "C1": "fit full and rank-r predictive ceilings on fit documents",
+      "C2": "fit Q-E and Q-W rank curves",
+      "C3": "independent-half stability and null refits",
+      "C4": "validation rank freeze and metric-geometry classification",
+      "C5": "descriptive existing-carrier comparison",
+      "C6": "Q-W complement refit and deletion controls",
+      "C6b": "replay the frozen D-AUDIT deletion family on CONFIRM-Q (amendment A4)",
+      "C7": "freeze P/G/I/L labels and all carrier artifacts",
+      "C8": "exactly one test evaluation",
+      "C9": "freeze the reference carrier object for the next M stage",
+      "S0": "lock the specification and the existing-run provenance",
+      "S1": "D-AUDIT, the variance-dose deletion audit on DEV-Q",
+      "S2": "direction-versus-magnitude diagnostic on DEV-Q",
+      "S3": "implement and unit-test the full and reduced-rank ceilings",
+      "S4": "implement and unit-test Q-E and Q-W on the known-answer worlds",
+      "S5": "DEV rank curves, stability learning curves, ridge sweep, sizing",
+      "S6": "freeze lags, weights, ridges, rank rule, nulls, thresholds, sample size"
+    },
+    "test_discipline": "the test split is read exactly once, after C7 has frozen every label, rank, carrier identity and threshold; the counter starts at zero here",
+    "threshold_basis": {
+      "compression_fraction": "source section 9 fixes it at 0.90; it is a compression summary, not a significance threshold, and the whole rank curve is reported beside it",
+      "deletion_margin_relative": "the matched-dose deletion gap must exceed 5 percent of the full-aperture gain AND have a document-bootstrap lower bound above zero; a bare interval above zero is too easy to clear with thousands of documents",
+      "metric_concordance_fraction": "the cross-metric overlap is judged against the within-half bootstrap self-overlap rather than a constant, so the threshold asks whether the two metrics agree as well as one metric agrees with itself under resampling, up to a 20 percent shortfall",
+      "positive_gain_floor": "inherited: a surviving-fraction ratio is not formed when its denominator is below this gain",
+      "redundancy_relative_high": "source section 12.2: a complement refit retaining at least half of the primary carrier's gain is a redundant carrier family, not a shoulder",
+      "redundancy_relative_low": "below 20 percent retention the primary carrier is a dominant channel under the tested linear aperture",
+      "reproduction_min_fraction": "amendment A8 gives source section 15 point 5 a number: the single test read must reproduce at least 0.75 of the validation value with the same sign, on both the predictive endpoint and the geometry endpoint",
+      "ridge_stability_min": "amendment A5: a carrier that keeps 0.80 of its subspace across a decade of whitening ridge is a carrier; one that does not is a regularization choice",
+      "sizing_msc_tolerance": "amendment A8: the chosen size must put split-half MSC at the largest rank within 0.05 of the fitted asymptote",
+      "sizing_se_max": "the multi-horizon gain's document-bootstrap standard error must be at most 0.010, which is about a tenth of the development pool's rank-16 gain",
+      "stability_alpha": "with 400 association-destruction refits the finest attainable empirical p-value is 1/401, and stability requires exceeding every null replicate"
+    },
+    "thresholds": {
+      "compression_fraction": 0.9,
+      "deletion_margin_relative": 0.05,
+      "metric_concordance_fraction": 0.8,
+      "positive_gain_floor": 0.02,
+      "redundancy_relative_high": 0.5,
+      "redundancy_relative_low": 0.2,
+      "reproduction_min_fraction": 0.75,
+      "ridge_stability_min": 0.8,
+      "sizing_msc_tolerance": 0.05,
+      "sizing_se_max": 0.01,
+      "stability_alpha": 0.0024937655860349127
+    }
+  },
+  "label": "R2_4_FROZEN",
+  "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+  "specification_section": "R2.4 unified section 9 (sizing and reproduction, amendment A8)"
+}

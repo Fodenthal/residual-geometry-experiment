@@ -1,0 +1,2611 @@
+{
+ "claim_count": 233,
+ "claims": {
+  "a7_defect_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the amendment defect recorded for the shared-source ceiling",
+   "rendered": "AMENDMENT_A7_DEFECTIVE_AS_WRITTEN",
+   "source": {
+    "file": "post_review:a7_amendment_defect.json",
+    "pointer": "label"
+   },
+   "value": "AMENDMENT_A7_DEFECTIVE_AS_WRITTEN"
+  },
+  "a7_gain_shared_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the shared-source construction's held-out gain at rank 16",
+   "rendered": "0.1700",
+   "source": {
+    "file": "post_review:a7_bound_diagnosis.json",
+    "pointer": "evidence/by_rank/16/candidates/shared_source/held_out_gain"
+   },
+   "value": 0.16997440447412052
+  },
+  "a7_gain_shared_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the shared-source construction's held-out gain at rank 64",
+   "rendered": "0.1869",
+   "source": {
+    "file": "post_review:a7_bound_diagnosis.json",
+    "pointer": "evidence/by_rank/64/candidates/shared_source/held_out_gain"
+   },
+   "value": 0.18691106600679144
+  },
+  "a7_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "whether the shared-source quantity is a bound or a same-family comparator",
+   "rendered": "SAME_FAMILY_COMPARATOR_NOT_A_BOUND",
+   "source": {
+    "file": "post_review:a7_bound_diagnosis.json",
+    "pointer": "label"
+   },
+   "value": "SAME_FAMILY_COMPARATOR_NOT_A_BOUND"
+  },
+  "a7_objective_energy_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's value of that objective at rank 16, which nearly coincides with the construction's",
+   "rendered": "1.606",
+   "source": {
+    "file": "post_review:a7_bound_diagnosis.json",
+    "pointer": "evidence/by_rank/16/candidates/Q_E/a7_objective"
+   },
+   "value": 1.60560947816497
+  },
+  "a7_objective_gap_r64": {
+   "digits": 1,
+   "kind": "number",
+   "note": "how far the construction sits from the best candidate on its own objective",
+   "rendered": "0",
+   "source": {
+    "file": "post_review:a7_bound_diagnosis.json",
+    "pointer": "evidence/by_rank/64/objective_gap_to_best"
+   },
+   "value": 0.0
+  },
+  "a7_objective_shared_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the shared-source construction's own objective at rank 16",
+   "rendered": "1.606",
+   "source": {
+    "file": "post_review:a7_bound_diagnosis.json",
+    "pointer": "evidence/by_rank/16/candidates/shared_source/a7_objective"
+   },
+   "value": 1.6059651781831343
+  },
+  "a7_objective_shared_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the shared-source construction's own objective at rank 64",
+   "rendered": "2.225",
+   "source": {
+    "file": "post_review:a7_bound_diagnosis.json",
+    "pointer": "evidence/by_rank/64/candidates/shared_source/a7_objective"
+   },
+   "value": 2.2253121334748767
+  },
+  "a7_objective_variance_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the top-variance basis's value of that same objective",
+   "rendered": "2.050",
+   "source": {
+    "file": "post_review:a7_bound_diagnosis.json",
+    "pointer": "evidence/by_rank/64/candidates/variance/a7_objective"
+   },
+   "value": 2.0498044280079535
+  },
+  "a7_objective_whitened_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the whitened carrier's value of that same objective",
+   "rendered": "2.056",
+   "source": {
+    "file": "post_review:a7_bound_diagnosis.json",
+    "pointer": "evidence/by_rank/64/candidates/Q_W/a7_objective"
+   },
+   "value": 2.0564335792020194
+  },
+  "agreement_chance_expectation_r64": {
+   "digits": 2,
+   "kind": "number",
+   "note": "the agreement two random rank-64 subspaces show by chance, which is the reference that would apply if the estimators were compared at rank 64",
+   "rendered": "0.25",
+   "source": {
+    "file": "post_review:agreement_chance_baseline.json",
+    "pointer": "evidence/haar_haar_by_rank/64/analytic_expectation"
+   },
+   "value": 0.25
+  },
+  "agreement_chance_max": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the largest agreement any of those 200 random pairs reached",
+   "rendered": "0.07328",
+   "source": {
+    "file": "post_review:agreement_chance_baseline.json",
+    "pointer": "evidence/haar_haar_by_rank/16/empirical_max"
+   },
+   "value": 0.07328208270132766
+  },
+  "agreement_chance_mean": {
+   "digits": 4,
+   "kind": "number",
+   "note": "agreement two random rank-16 subspaces show, measured over 200 draws",
+   "rendered": "0.06196",
+   "source": {
+    "file": "post_review:agreement_chance_baseline.json",
+    "pointer": "evidence/haar_haar_by_rank/16/empirical_mean"
+   },
+   "value": 0.06195811829225545
+  },
+  "agreement_over_chance": {
+   "digits": 4,
+   "kind": "number",
+   "note": "how many times chance the two estimators' agreement is",
+   "rendered": "7.626",
+   "source": {
+    "file": "post_review:agreement_chance_baseline.json",
+    "pointer": "evidence/observed_over_chance_mean"
+   },
+   "value": 7.626053023766288
+  },
+  "agreement_replicates": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "how many random pairs the chance baseline averaged over",
+   "rendered": "200",
+   "source": {
+    "file": "post_review:agreement_chance_baseline.json",
+    "pointer": "evidence/haar_haar_by_rank/16/replicates"
+   },
+   "value": 200
+  },
+  "aperture_ceiling_r1": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the rank-1 same-family reference subspace: an in-sample, ridge-regularized maximizer close to the energy eigenproblem, scored on held-out documents.  It is NOT an attainability bound, and the run's own carriers exceed it at rank 64",
+   "rendered": "0.07092",
+   "source": {
+    "file": "confirm:ceilings/confirm_ceilings.json",
+    "pointer": "evidence/shared_source_ceiling/1/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.07092036792393838
+  },
+  "aperture_ceiling_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the rank-16 same-family reference subspace: an in-sample, ridge-regularized maximizer close to the energy eigenproblem, scored on held-out documents.  It is NOT an attainability bound, and the run's own carriers exceed it at rank 64",
+   "rendered": "0.1700",
+   "source": {
+    "file": "confirm:ceilings/confirm_ceilings.json",
+    "pointer": "evidence/shared_source_ceiling/16/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.16997440447412052
+  },
+  "aperture_ceiling_r2": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the rank-2 same-family reference subspace: an in-sample, ridge-regularized maximizer close to the energy eigenproblem, scored on held-out documents.  It is NOT an attainability bound, and the run's own carriers exceed it at rank 64",
+   "rendered": "0.08666",
+   "source": {
+    "file": "confirm:ceilings/confirm_ceilings.json",
+    "pointer": "evidence/shared_source_ceiling/2/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.0866568284648066
+  },
+  "aperture_ceiling_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the rank-32 same-family reference subspace: an in-sample, ridge-regularized maximizer close to the energy eigenproblem, scored on held-out documents.  It is NOT an attainability bound, and the run's own carriers exceed it at rank 64",
+   "rendered": "0.1814",
+   "source": {
+    "file": "confirm:ceilings/confirm_ceilings.json",
+    "pointer": "evidence/shared_source_ceiling/32/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.181351508403546
+  },
+  "aperture_ceiling_r4": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the rank-4 same-family reference subspace: an in-sample, ridge-regularized maximizer close to the energy eigenproblem, scored on held-out documents.  It is NOT an attainability bound, and the run's own carriers exceed it at rank 64",
+   "rendered": "0.1091",
+   "source": {
+    "file": "confirm:ceilings/confirm_ceilings.json",
+    "pointer": "evidence/shared_source_ceiling/4/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.10913129130010309
+  },
+  "aperture_ceiling_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the rank-64 same-family reference subspace: an in-sample, ridge-regularized maximizer close to the energy eigenproblem, scored on held-out documents.  It is NOT an attainability bound, and the run's own carriers exceed it at rank 64",
+   "rendered": "0.1869",
+   "source": {
+    "file": "confirm:ceilings/confirm_ceilings.json",
+    "pointer": "evidence/shared_source_ceiling/64/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.18691106600679144
+  },
+  "aperture_ceiling_r8": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the rank-8 same-family reference subspace: an in-sample, ridge-regularized maximizer close to the energy eigenproblem, scored on held-out documents.  It is NOT an attainability bound, and the run's own carriers exceed it at rank 64",
+   "rendered": "0.1363",
+   "source": {
+    "file": "confirm:ceilings/confirm_ceilings.json",
+    "pointer": "evidence/shared_source_ceiling/8/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.13633040743724836
+  },
+  "aperture_width": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "directions in the frozen aperture the analysis lives in",
+   "rendered": "256",
+   "source": {
+    "file": "capture:capture_health.json",
+    "pointer": "evidence/aperture_width"
+   },
+   "value": 256
+  },
+  "bootstrap_replicates": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "bootstrap replicates behind every interval",
+   "rendered": "2,000",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/Q_W_r64/bootstrap/replicates"
+   },
+   "value": 2000
+  },
+  "capture_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the capture health verdict",
+   "rendered": "CAPTURE_HEALTHY",
+   "source": {
+    "file": "capture:capture_health.json",
+    "pointer": "label"
+   },
+   "value": "CAPTURE_HEALTHY"
+  },
+  "capture_sequences": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "spliced sequences captured",
+   "rendered": "4,000",
+   "source": {
+    "file": "capture:capture_health.json",
+    "pointer": "evidence/sequences"
+   },
+   "value": 4000
+  },
+  "comparator_haar_0": {
+   "digits": 4,
+   "kind": "number",
+   "note": "a random subspace of the same rank",
+   "rendered": "0.1651",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_0/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.16512647803272104
+  },
+  "comparator_haar_1": {
+   "digits": 4,
+   "kind": "number",
+   "note": "a second random subspace of the same rank",
+   "rendered": "0.1686",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_1/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.16859694916457316
+  },
+  "comparator_haar_2": {
+   "digits": 4,
+   "kind": "number",
+   "note": "a third random subspace of the same rank",
+   "rendered": "0.1676",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_2/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.1676402349464954
+  },
+  "comparator_haar_3": {
+   "digits": 4,
+   "kind": "number",
+   "note": "a fourth random subspace of the same rank",
+   "rendered": "0.1660",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_3/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.16598613310752539
+  },
+  "comparator_inherited_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what the carrier inherited from the earlier run predicts",
+   "rendered": "0.1288",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/inherited_r16/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.12876325476209952
+  },
+  "comparator_primary_variance_captured": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the aperture variance the primary carrier captures",
+   "rendered": "0.3418",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/Q_W_r64/variance_captured_fit"
+   },
+   "value": 0.3417573778763636
+  },
+  "comparator_variance_captured": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the aperture variance that basis captures",
+   "rendered": "0.8964",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/variance_r64/variance_captured_fit"
+   },
+   "value": 0.8963597362581927
+  },
+  "comparator_variance_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what the plain top-variance basis of the same rank predicts",
+   "rendered": "0.2062",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/variance_r64/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.2062399026550874
+  },
+  "complement_ceiling_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the resampling ceiling at the complement carrier's rank",
+   "rendered": "0.4016",
+   "source": {
+    "file": "confirm:stability/confirm_stability.json",
+    "pointer": "evidence/estimators/Q_W/bootstrap_ceiling/32/mean"
+   },
+   "value": 0.4015802604810622
+  },
+  "complement_dimension": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "how many directions remain after removing the primary carrier",
+   "rendered": "192",
+   "source": {
+    "file": "post_review:complement_against_its_null.json",
+    "pointer": "evidence/complement_dimension"
+   },
+   "value": 192
+  },
+  "complement_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what that complement carrier predicts",
+   "rendered": "0.1754",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/32/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.17535117340984466
+  },
+  "complement_gain_lower_bound": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's bootstrap lower bound",
+   "rendered": "0.1642",
+   "source": {
+    "file": "post_review:complement_against_its_null.json",
+    "pointer": "evidence/complement_carrier/bootstrap/gamma_augmented/q05"
+   },
+   "value": 0.16420939026229145
+  },
+  "complement_gain_r1": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's gain at rank 1",
+   "rendered": "0.06626",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/1/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.06626068181826059
+  },
+  "complement_gain_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's gain at rank 16",
+   "rendered": "0.1352",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/16/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.135235919289928
+  },
+  "complement_gain_r2": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's gain at rank 2",
+   "rendered": "0.07648",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/2/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.07647808645248766
+  },
+  "complement_gain_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's gain at rank 32",
+   "rendered": "0.1754",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/32/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.17535117340984466
+  },
+  "complement_gain_r4": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's gain at rank 4",
+   "rendered": "0.09086",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/4/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.09085743469371534
+  },
+  "complement_gain_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's gain at rank 64",
+   "rendered": "0.1857",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/64/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.1856820564069966
+  },
+  "complement_gain_r8": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's gain at rank 8",
+   "rendered": "0.1127",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/8/multi_horizon_mean/gamma_augmented"
+   },
+   "value": 0.11274485145856462
+  },
+  "complement_haar_max": {
+   "digits": 4,
+   "kind": "number",
+   "note": "strongest random rank-32 subspace drawn inside the same complement",
+   "rendered": "0.1356",
+   "source": {
+    "file": "post_review:complement_against_its_null.json",
+    "pointer": "evidence/haar_inside_gain_max"
+   },
+   "value": 0.13556583894840352
+  },
+  "complement_haar_min": {
+   "digits": 4,
+   "kind": "number",
+   "note": "weakest random rank-32 subspace drawn inside the same complement",
+   "rendered": "0.1275",
+   "source": {
+    "file": "post_review:complement_against_its_null.json",
+    "pointer": "evidence/haar_inside_gain_min"
+   },
+   "value": 0.12746859019678525
+  },
+  "complement_null_max": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's null maximum",
+   "rendered": "0.2195",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_stability/null_max"
+   },
+   "value": 0.21952405687155324
+  },
+  "complement_over_haar_inside": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier over the best random subspace in the same place",
+   "rendered": "1.293",
+   "source": {
+    "file": "post_review:complement_against_its_null.json",
+    "pointer": "evidence/complement_over_haar_inside_max"
+   },
+   "value": 1.293476105559185
+  },
+  "complement_overlap": {
+   "digits": 4,
+   "kind": "number",
+   "note": "overlap between the complement carrier and the primary, which is zero by construction",
+   "rendered": "7.630e-32",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/32/overlap_with_primary"
+   },
+   "value": 7.629562266414845e-32
+  },
+  "complement_rank": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "the rank of the carrier refitted in the primary carrier's orthogonal complement",
+   "rendered": "32",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank"
+   },
+   "value": 32
+  },
+  "complement_relative": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement's gain as a share of the primary carrier's",
+   "rendered": "0.9106",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_rank_curve/32/relative_to_primary"
+   },
+   "value": 0.9106493477248563
+  },
+  "complement_split_half": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's split-half agreement",
+   "rendered": "0.2521",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_stability/observed_split_half_msc"
+   },
+   "value": 0.2521207321655015
+  },
+  "complement_stability_p": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the complement carrier's stability p-value",
+   "rendered": "0.002494",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/complement_stability/empirical_p_value"
+   },
+   "value": 0.0024937655860349127
+  },
+  "complement_stability_position": {
+   "derivation": {
+    "formula": "null_to_ceiling_position",
+    "inputs": [
+     "complement_split_half",
+     "complement_null_max",
+     "complement_ceiling_r32"
+    ]
+   },
+   "digits": 3,
+   "kind": "number",
+   "note": "where the complement carrier's agreement sits between the null and the ceiling",
+   "rendered": "0.179",
+   "value": 0.17904731971597435
+  },
+  "confirm_documents": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "documents in the confirmatory pool, fixed before the pool was drawn",
+   "rendered": "2,000",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/confirmatory_documents"
+   },
+   "value": 2000
+  },
+  "cross_metric_ceiling": {
+   "digits": 4,
+   "kind": "number",
+   "note": "how well a carrier agrees with itself under resampling",
+   "rendered": "0.3969",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/metric_geometry/evidence/bootstrap_self_overlap_mean"
+   },
+   "value": 0.39693015641640544
+  },
+  "cross_metric_msc": {
+   "digits": 4,
+   "kind": "number",
+   "note": "agreement between the two estimators' carriers",
+   "rendered": "0.4725",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/metric_geometry/evidence/cross_metric_msc"
+   },
+   "value": 0.472495895349524
+  },
+  "cross_metric_rank": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "the rank the two estimators are compared at",
+   "rendered": "16",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/cross_metric_rank"
+   },
+   "value": 16
+  },
+  "cross_metric_threshold": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the agreement the run required, 0.80 of the attainable ceiling",
+   "rendered": "0.3175",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/metric_geometry/evidence/threshold"
+   },
+   "value": 0.31754412513312436
+  },
+  "decay_best_gain_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the strongest candidate of any kind at rank 16",
+   "rendered": "0.1700",
+   "source": {
+    "file": "post_review:rank_matched_comparators.json",
+    "pointer": "evidence/decay/16/best_gain"
+   },
+   "value": 0.1699990406632817
+  },
+  "decay_best_gain_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the strongest candidate of any kind at rank 32",
+   "rendered": "0.1878",
+   "source": {
+    "file": "post_review:rank_matched_comparators.json",
+    "pointer": "evidence/decay/32/best_gain"
+   },
+   "value": 0.18779362710227085
+  },
+  "decay_best_gain_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the strongest candidate of any kind at rank 64",
+   "rendered": "0.2062",
+   "source": {
+    "file": "post_review:rank_matched_comparators.json",
+    "pointer": "evidence/decay/64/best_gain"
+   },
+   "value": 0.2062399026550874
+  },
+  "decay_best_over_haar_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "that candidate over the best random subspace of rank 16, which is the margin structure buys at this size",
+   "rendered": "1.527",
+   "source": {
+    "file": "post_review:rank_matched_comparators.json",
+    "pointer": "evidence/decay/16/best_over_haar_max"
+   },
+   "value": 1.5269169407717145
+  },
+  "decay_best_over_haar_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "that candidate over the best random subspace of rank 32, which is the margin structure buys at this size",
+   "rendered": "1.322",
+   "source": {
+    "file": "post_review:rank_matched_comparators.json",
+    "pointer": "evidence/decay/32/best_over_haar_max"
+   },
+   "value": 1.3220955135266692
+  },
+  "decay_best_over_haar_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "that candidate over the best random subspace of rank 64, which is the margin structure buys at this size",
+   "rendered": "1.223",
+   "source": {
+    "file": "post_review:rank_matched_comparators.json",
+    "pointer": "evidence/decay/64/best_over_haar_max"
+   },
+   "value": 1.2232718544258454
+  },
+  "decay_best_share_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what that candidate recovers of the whole aperture at rank 16",
+   "rendered": "0.8029",
+   "source": {
+    "file": "post_review:rank_matched_comparators.json",
+    "pointer": "evidence/decay/16/best_share_of_aperture"
+   },
+   "value": 0.8028863805468524
+  },
+  "decay_best_share_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what that candidate recovers of the whole aperture at rank 32",
+   "rendered": "0.8869",
+   "source": {
+    "file": "post_review:rank_matched_comparators.json",
+    "pointer": "evidence/decay/32/best_share_of_aperture"
+   },
+   "value": 0.8869282142159406
+  },
+  "decay_best_share_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what that candidate recovers of the whole aperture at rank 64",
+   "rendered": "0.9740",
+   "source": {
+    "file": "post_review:rank_matched_comparators.json",
+    "pointer": "evidence/decay/64/best_share_of_aperture"
+   },
+   "value": 0.9740479023940967
+  },
+  "deleted_surviving_fraction": {
+   "digits": 4,
+   "kind": "number",
+   "note": "that survival as a share of the full-aperture gain",
+   "rendered": "0.8454",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/primary_carrier_deleted/surviving_fraction_of_full"
+   },
+   "value": 0.8454332801374952
+  },
+  "deleted_surviving_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what the aperture still predicts after the whole primary carrier is deleted",
+   "rendered": "0.1790",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/primary_carrier_deleted/surviving_gain/gamma_augmented"
+   },
+   "value": 0.17900770277146175
+  },
+  "deleted_variance": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the share of aperture variance the primary carrier holds",
+   "rendered": "0.3418",
+   "source": {
+    "file": "confirm:redundancy/complement_refit.json",
+    "pointer": "evidence/primary_carrier_deleted/deleted_variance"
+   },
+   "value": 0.34175737787636357
+  },
+  "deletion_delta": {
+   "digits": 4,
+   "kind": "number",
+   "note": "how much more destructive the top-variance deletion is",
+   "rendered": "0.03355",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/l_axis/evidence/comparison/delta_top_more_destructive"
+   },
+   "value": 0.03354874861113999
+  },
+  "deletion_delta_q05": {
+   "digits": 4,
+   "kind": "number",
+   "note": "lower bound on that difference",
+   "rendered": "0.02369",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/l_axis/evidence/comparison/bootstrap/q05"
+   },
+   "value": 0.02368704299571402
+  },
+  "deletion_delta_q95": {
+   "digits": 4,
+   "kind": "number",
+   "note": "upper bound on that difference",
+   "rendered": "0.04366",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/l_axis/evidence/comparison/bootstrap/q95"
+   },
+   "value": 0.04366136516241926
+  },
+  "deletion_dose": {
+   "digits": 2,
+   "kind": "number",
+   "note": "the matched share of aperture variance both deletions remove",
+   "rendered": "0.30",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/l_axis/evidence/comparison/dose"
+   },
+   "value": 0.3
+  },
+  "deletion_lower_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what survives deleting lower directions carrying the same variance",
+   "rendered": "0.1689",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/l_axis/evidence/comparison/lower_surviving_gain"
+   },
+   "value": 0.16886119609184452
+  },
+  "deletion_lower_rank": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "how many lower directions the same dose takes",
+   "rendered": "237",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/l_axis/evidence/comparison/lower_deleted_rank"
+   },
+   "value": 237
+  },
+  "deletion_margin": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the margin the difference had to clear",
+   "rendered": "0.01059",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/l_axis/evidence/margin"
+   },
+   "value": 0.010586743328956085
+  },
+  "deletion_top_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what survives deleting top-variance directions",
+   "rendered": "0.1353",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/l_axis/evidence/comparison/top_surviving_gain"
+   },
+   "value": 0.13531244748070453
+  },
+  "deletion_top_rank": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "how many top directions that dose takes",
+   "rendered": "2",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/l_axis/evidence/comparison/top_deleted_rank"
+   },
+   "value": 2
+  },
+  "dev_documents": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "documents in the spent development pool",
+   "rendered": "2,000",
+   "source": {
+    "file": "dev:spec/dev_manifest.json",
+    "pointer": "evidence/pool/documents"
+   },
+   "value": 2000
+  },
+  "dev_selected_rho": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the ridge development selected, which the freeze carried forward",
+   "rendered": "0.1000",
+   "source": {
+    "file": "dev:carriers/rank_curves.json",
+    "pointer": "evidence/selected_rho"
+   },
+   "value": 0.1
+  },
+  "dev_worlds_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "whether the synthetic known-answer worlds all came out right",
+   "rendered": "WORLDS_PASSED",
+   "source": {
+    "file": "dev:worlds/known_answer_worlds.json",
+    "pointer": "label"
+   },
+   "value": "WORLDS_PASSED"
+  },
+  "disjointness_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the pool disjointness verdict",
+   "rendered": "POOL_DISJOINT",
+   "source": {
+    "file": "capture:disjointness_proof.json",
+    "pointer": "label"
+   },
+   "value": "POOL_DISJOINT"
+  },
+  "energy_aperture_share": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what the energy carrier recovers of the whole aperture at its frozen rank",
+   "rendered": "0.8029",
+   "source": {
+    "file": "post_review:g_axis_adjudication.json",
+    "pointer": "evidence/per_estimator_p_axis_verdict/Q_E/aperture_share_at_its_own_r90"
+   },
+   "value": 0.8028863805468524
+  },
+  "energy_best_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's gain at the largest rank",
+   "rendered": "0.1866",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/best_gain_within_grid"
+   },
+   "value": 0.18656775856126603
+  },
+  "energy_bootstrap_q05": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, energy carrier at rank 16",
+   "rendered": "0.1587",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/Q_E_r16/bootstrap/gamma_augmented/q05"
+   },
+   "value": 0.158669376105253
+  },
+  "energy_bootstrap_q95": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, energy carrier at rank 16",
+   "rendered": "0.1817",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/Q_E_r16/bootstrap/gamma_augmented/q95"
+   },
+   "value": 0.18173293779814925
+  },
+  "energy_ceiling_fraction": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy estimator's share of its own ceiling",
+   "rendered": "0.3145",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/stability/Q_E/fraction_of_attainable_ceiling"
+   },
+   "value": 0.3145499421140963
+  },
+  "energy_ceiling_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's resampling ceiling at that rank",
+   "rendered": "0.4179",
+   "source": {
+    "file": "confirm:stability/confirm_stability.json",
+    "pointer": "evidence/estimators/Q_E/bootstrap_ceiling/16/mean"
+   },
+   "value": 0.41794853166603135
+  },
+  "energy_gain_at_r90": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's gain at its compression rank",
+   "rendered": "0.1700",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/rank_curve/16"
+   },
+   "value": 0.1699990406632817
+  },
+  "energy_gain_r1": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's gain at rank 1",
+   "rendered": "0.07087",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/rank_curve/1"
+   },
+   "value": 0.0708728308191493
+  },
+  "energy_gain_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's gain at rank 16",
+   "rendered": "0.1700",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/rank_curve/16"
+   },
+   "value": 0.1699990406632817
+  },
+  "energy_gain_r2": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's gain at rank 2",
+   "rendered": "0.08658",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/rank_curve/2"
+   },
+   "value": 0.08657566132112085
+  },
+  "energy_gain_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's gain at rank 32",
+   "rendered": "0.1810",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/rank_curve/32"
+   },
+   "value": 0.1809959634471781
+  },
+  "energy_gain_r4": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's gain at rank 4",
+   "rendered": "0.1091",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/rank_curve/4"
+   },
+   "value": 0.10906366131947273
+  },
+  "energy_gain_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's gain at rank 64",
+   "rendered": "0.1866",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/rank_curve/64"
+   },
+   "value": 0.18656775856126603
+  },
+  "energy_gain_r8": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's gain at rank 8",
+   "rendered": "0.1363",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/rank_curve/8"
+   },
+   "value": 0.13630184303427742
+  },
+  "energy_label_alone": {
+   "digits": 4,
+   "kind": "label",
+   "note": "what the energy estimator says on its own",
+   "rendered": "P1_COMPACT_PREDICTIVE_COMPRESSION",
+   "source": {
+    "file": "post_review:g_axis_adjudication.json",
+    "pointer": "evidence/per_estimator_p_axis_verdict/Q_E/label_if_read_alone"
+   },
+   "value": "P1_COMPACT_PREDICTIVE_COMPRESSION"
+  },
+  "energy_null_max": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy estimator's null maximum",
+   "rendered": "0.08407",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/stability/Q_E/null_max"
+   },
+   "value": 0.08407184468272136
+  },
+  "energy_null_max_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's null maximum at that rank",
+   "rendered": "0.08407",
+   "source": {
+    "file": "confirm:stability/confirm_stability.json",
+    "pointer": "evidence/estimators/Q_E/null/16/max"
+   },
+   "value": 0.08407184468272136
+  },
+  "energy_r90": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "the energy estimator's compression rank",
+   "rendered": "16",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_E/evidence/r90"
+   },
+   "value": 16
+  },
+  "energy_rank": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "the rank the energy estimator was frozen at",
+   "rendered": "16",
+   "source": {
+    "file": "confirm:confirmation/final_labels.json",
+    "pointer": "evidence/frozen_ranks/Q_E"
+   },
+   "value": 16
+  },
+  "energy_share_of_aperture": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's share of what the whole aperture predicts, at its own compression rank 16",
+   "rendered": "0.8029",
+   "source": {
+    "file": "confirm:carriers/confirm_rank_curves.json",
+    "pointer": "evidence/rank_curves/Q_E/16/eta_global_multi_horizon"
+   },
+   "value": 0.8028863805468524
+  },
+  "energy_split_half": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy estimator's split-half agreement",
+   "rendered": "0.1315",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/stability/Q_E/observed_split_half_msc"
+   },
+   "value": 0.1314656864422217
+  },
+  "energy_split_half_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier's split-half agreement at its frozen rank",
+   "rendered": "0.1315",
+   "source": {
+    "file": "confirm:stability/confirm_stability.json",
+    "pointer": "evidence/estimators/Q_E/split_half/16/mean_subspace_correlation"
+   },
+   "value": 0.1314656864422217
+  },
+  "energy_stability_position": {
+   "derivation": {
+    "formula": "null_to_ceiling_position",
+    "inputs": [
+     "energy_split_half_r16",
+     "energy_null_max_r16",
+     "energy_ceiling_r16"
+    ]
+   },
+   "digits": 3,
+   "kind": "number",
+   "note": "where the energy carrier's agreement sits between the null and the ceiling",
+   "rendered": "0.142",
+   "value": 0.14195013790187003
+  },
+  "fraction_fit_a": {
+   "digits": 2,
+   "kind": "number",
+   "note": "share of documents in the first fit half",
+   "rendered": "0.35",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/confirmatory_split_fractions/fitA"
+   },
+   "value": 0.35
+  },
+  "fraction_test": {
+   "digits": 2,
+   "kind": "number",
+   "note": "share of documents sealed for the single test read",
+   "rendered": "0.15",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/confirmatory_split_fractions/test"
+   },
+   "value": 0.15
+  },
+  "fraction_validation": {
+   "digits": 2,
+   "kind": "number",
+   "note": "share of documents held for validation",
+   "rendered": "0.15",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/confirmatory_split_fractions/validation"
+   },
+   "value": 0.15
+  },
+  "full_aperture_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what the whole 256-direction aperture predicts, the reference for every share",
+   "rendered": "0.2117",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/full_aperture_gain"
+   },
+   "value": 0.2117348665791217
+  },
+  "g_axis_frozen_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the label the run emitted, retained as lineage",
+   "rendered": "G1_METRIC_CONCORDANT_CARRIER",
+   "source": {
+    "file": "post_review:g_axis_adjudication.json",
+    "pointer": "evidence/frozen_label_retained_as_lineage"
+   },
+   "value": "G1_METRIC_CONCORDANT_CARRIER"
+  },
+  "g_axis_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the label section 10.3's unimplemented clause produces",
+   "rendered": "METRIC_DEPENDENT_PREDICTIVE_CARRIERS",
+   "source": {
+    "file": "post_review:g_axis_adjudication.json",
+    "pointer": "label"
+   },
+   "value": "METRIC_DEPENDENT_PREDICTIVE_CARRIERS"
+  },
+  "haar0_bootstrap_q05": {
+   "digits": 4,
+   "kind": "number",
+   "note": "lower bootstrap bound on the first random subspace's gain",
+   "rendered": "0.1543",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_0/bootstrap/gamma_augmented/q05"
+   },
+   "value": 0.15426517511483023
+  },
+  "haar0_bootstrap_q95": {
+   "digits": 4,
+   "kind": "number",
+   "note": "upper bootstrap bound on a random subspace's gain",
+   "rendered": "0.1763",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_0/bootstrap/gamma_augmented/q95"
+   },
+   "value": 0.17625887838485302
+  },
+  "haar1_bootstrap_q05": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, second random subspace",
+   "rendered": "0.1568",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_1/bootstrap/gamma_augmented/q05"
+   },
+   "value": 0.15680511071506226
+  },
+  "haar1_bootstrap_q95": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, second random subspace",
+   "rendered": "0.1800",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_1/bootstrap/gamma_augmented/q95"
+   },
+   "value": 0.1799868726655405
+  },
+  "haar2_bootstrap_q05": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, third random subspace",
+   "rendered": "0.1562",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_2/bootstrap/gamma_augmented/q05"
+   },
+   "value": 0.15622237272129663
+  },
+  "haar2_bootstrap_q95": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, third random subspace",
+   "rendered": "0.1794",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_2/bootstrap/gamma_augmented/q95"
+   },
+   "value": 0.17941821052953116
+  },
+  "haar3_bootstrap_q05": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, fourth random subspace",
+   "rendered": "0.1547",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_3/bootstrap/gamma_augmented/q05"
+   },
+   "value": 0.15469301701253713
+  },
+  "haar3_bootstrap_q95": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, fourth random subspace",
+   "rendered": "0.1775",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/haar_r64_3/bootstrap/gamma_augmented/q95"
+   },
+   "value": 0.17752568809904842
+  },
+  "haar_best_relative": {
+   "derivation": {
+    "formula": "ratio",
+    "inputs": [
+     "comparator_haar_1",
+     "primary_best_gain"
+    ]
+   },
+   "digits": 4,
+   "kind": "number",
+   "note": "what the best of four random subspaces of the same rank recovers of the fitted carrier's gain",
+   "rendered": "0.8756",
+   "value": 0.875572708180689
+  },
+  "haar_expectation_r16": {
+   "digits": 3,
+   "kind": "number",
+   "note": "the agreement two random subspaces of rank 16 show by chance in 256 dimensions, which is the right chance reference for the cross-metric statistic since the estimators are compared at rank 16",
+   "rendered": "0.0625",
+   "source": {
+    "file": "confirm:stability/confirm_stability.json",
+    "pointer": "evidence/estimators/Q_W/split_half/16/analytic_haar_expectation"
+   },
+   "value": 0.0625
+  },
+  "haar_worst_relative": {
+   "derivation": {
+    "formula": "ratio",
+    "inputs": [
+     "comparator_haar_0",
+     "primary_best_gain"
+    ]
+   },
+   "digits": 4,
+   "kind": "number",
+   "note": "what the weakest of the four random subspaces recovers",
+   "rendered": "0.8575",
+   "value": 0.8575495480782335
+  },
+  "handoff_case": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the handoff case letter",
+   "rendered": "D",
+   "source": {
+    "file": "confirm:decisions/confirm_run_summary.json",
+    "pointer": "handoff_case"
+   },
+   "value": "D"
+  },
+  "handoff_description": {
+   "digits": 4,
+   "kind": "text",
+   "note": "what the next stage is told",
+   "rendered": "no compact stable carrier: do not run another fixed-low-rank autonomy search",
+   "source": {
+    "file": "confirm:confirmation/reference_carrier_manifest.json",
+    "pointer": "evidence/handoff/description"
+   },
+   "value": "no compact stable carrier: do not run another fixed-low-rank autonomy search"
+  },
+  "inherited_bootstrap_q05": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, inherited carrier",
+   "rendered": "0.1194",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/inherited_r16/bootstrap/gamma_augmented/q05"
+   },
+   "value": 0.11935410545528297
+  },
+  "inherited_bootstrap_q95": {
+   "digits": 4,
+   "kind": "number",
+   "note": "bound, inherited carrier",
+   "rendered": "0.1380",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/inherited_r16/bootstrap/gamma_augmented/q95"
+   },
+   "value": 0.13795737131945812
+  },
+  "invariant_checks": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "splice invariant checks run",
+   "rendered": "4,000",
+   "source": {
+    "file": "capture:capture_health.json",
+    "pointer": "evidence/invariant_checks"
+   },
+   "value": 4000
+  },
+  "invariant_failures": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "splice invariant checks that failed",
+   "rendered": "0",
+   "source": {
+    "file": "capture:capture_health.json",
+    "pointer": "evidence/invariant_failures"
+   },
+   "value": 0
+  },
+  "label_g": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the metric-agreement verdict",
+   "rendered": "G1_METRIC_CONCORDANT_CARRIER",
+   "source": {
+    "file": "confirm:confirmation/final_labels.json",
+    "pointer": "evidence/labels/G"
+   },
+   "value": "G1_METRIC_CONCORDANT_CARRIER"
+  },
+  "label_i": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the uniqueness verdict",
+   "rendered": "I3_REDUNDANT_CARRIER_FAMILY",
+   "source": {
+    "file": "confirm:confirmation/final_labels.json",
+    "pointer": "evidence/labels/I"
+   },
+   "value": "I3_REDUNDANT_CARRIER_FAMILY"
+  },
+  "label_l": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the deletion-geometry verdict",
+   "rendered": "L1_GEOMETRY_SPECIFIC_DELETION",
+   "source": {
+    "file": "confirm:confirmation/final_labels.json",
+    "pointer": "evidence/labels/L"
+   },
+   "value": "L1_GEOMETRY_SPECIFIC_DELETION"
+  },
+  "label_p": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the compression axis verdict",
+   "rendered": "P0_NO_COMPACT_PREDICTIVE_COMPRESSION",
+   "source": {
+    "file": "confirm:confirmation/final_labels.json",
+    "pointer": "evidence/labels/P"
+   },
+   "value": "P0_NO_COMPACT_PREDICTIVE_COMPRESSION"
+  },
+  "label_r": {
+   "digits": 4,
+   "kind": "label",
+   "note": "whether the carrier survives changing the estimator's ridge",
+   "rendered": "R0_RIDGE_DEPENDENT_CARRIER",
+   "source": {
+    "file": "confirm:confirmation/final_labels.json",
+    "pointer": "evidence/labels/R"
+   },
+   "value": "R0_RIDGE_DEPENDENT_CARRIER"
+  },
+  "matched_energy_over_haar_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier over the best random subspace at rank 16",
+   "rendered": "1.527",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/16/fitted_over_haar_max/Q_E"
+   },
+   "value": 1.5269169407717145
+  },
+  "matched_energy_over_haar_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier over the best random subspace at rank 32",
+   "rendered": "1.274",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/32/fitted_over_haar_max/Q_E"
+   },
+   "value": 1.2742389341552771
+  },
+  "matched_energy_over_haar_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier over the best random subspace at rank 64",
+   "rendered": "1.107",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/64/fitted_over_haar_max/Q_E"
+   },
+   "value": 1.106590359349569
+  },
+  "matched_energy_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier at rank 16",
+   "rendered": "0.1700",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/16/fitted/Q_E/gain"
+   },
+   "value": 0.1699990406632817
+  },
+  "matched_energy_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier at rank 32",
+   "rendered": "0.1810",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/32/fitted/Q_E/gain"
+   },
+   "value": 0.1809959634471781
+  },
+  "matched_energy_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the energy carrier at rank 64",
+   "rendered": "0.1866",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/64/fitted/Q_E/gain"
+   },
+   "value": 0.18656775856126603
+  },
+  "matched_haar_max_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "strongest of four random rank-16 subspaces",
+   "rendered": "0.1113",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/16/haar_gain_max"
+   },
+   "value": 0.11133483172788887
+  },
+  "matched_haar_max_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "strongest of four random rank-32 subspaces",
+   "rendered": "0.1420",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/32/haar_gain_max"
+   },
+   "value": 0.14204240554552242
+  },
+  "matched_haar_max_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "strongest of four random rank-64 subspaces",
+   "rendered": "0.1686",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/64/haar_gain_max"
+   },
+   "value": 0.16859694916457316
+  },
+  "matched_haar_min_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "weakest of four random rank-16 subspaces",
+   "rendered": "0.09520",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/16/haar_gain_min"
+   },
+   "value": 0.09520438856635671
+  },
+  "matched_haar_min_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "weakest of four random rank-32 subspaces",
+   "rendered": "0.1340",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/32/haar_gain_min"
+   },
+   "value": 0.13403781274549129
+  },
+  "matched_haar_min_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "weakest of four random rank-64 subspaces",
+   "rendered": "0.1651",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/64/haar_gain_min"
+   },
+   "value": 0.16512647803272104
+  },
+  "matched_haar_share_r16": {
+   "derivation": {
+    "formula": "ratio",
+    "inputs": [
+     "matched_haar_max_r16",
+     "full_aperture_gain"
+    ]
+   },
+   "digits": 4,
+   "kind": "number",
+   "note": "what the best random rank-16 subspace recovers of the whole aperture's predictable future",
+   "rendered": "0.5258",
+   "value": 0.5258219089121298
+  },
+  "matched_haar_share_r32": {
+   "derivation": {
+    "formula": "ratio",
+    "inputs": [
+     "matched_haar_max_r32",
+     "full_aperture_gain"
+    ]
+   },
+   "digits": 4,
+   "kind": "number",
+   "note": "what the best random rank-32 subspace recovers of the whole aperture's predictable future",
+   "rendered": "0.6709",
+   "value": 0.6708503320233449
+  },
+  "matched_haar_share_r64": {
+   "derivation": {
+    "formula": "ratio",
+    "inputs": [
+     "matched_haar_max_r64",
+     "full_aperture_gain"
+    ]
+   },
+   "digits": 4,
+   "kind": "number",
+   "note": "what the best random rank-64 subspace recovers of the whole aperture's predictable future",
+   "rendered": "0.7963",
+   "value": 0.7962644598336447
+  },
+  "matched_variance_over_haar_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the top-variance basis over the best random subspace at rank 16",
+   "rendered": "1.450",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/16/fitted_over_haar_max/variance"
+   },
+   "value": 1.4504014598160413
+  },
+  "matched_variance_over_haar_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the top-variance basis over the best random subspace at rank 32",
+   "rendered": "1.322",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/32/fitted_over_haar_max/variance"
+   },
+   "value": 1.3220955135266692
+  },
+  "matched_variance_over_haar_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the top-variance basis over the best random subspace at rank 64",
+   "rendered": "1.223",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/64/fitted_over_haar_max/variance"
+   },
+   "value": 1.2232718544258454
+  },
+  "matched_variance_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the top-variance basis at rank 16",
+   "rendered": "0.1615",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/16/fitted/variance/gain"
+   },
+   "value": 0.16148020246650333
+  },
+  "matched_variance_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the top-variance basis at rank 32",
+   "rendered": "0.1878",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/32/fitted/variance/gain"
+   },
+   "value": 0.18779362710227085
+  },
+  "matched_variance_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the top-variance basis at rank 64",
+   "rendered": "0.2062",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/64/fitted/variance/gain"
+   },
+   "value": 0.2062399026550874
+  },
+  "matched_whitened_over_haar_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the whitened carrier over the best random subspace at rank 16",
+   "rendered": "1.208",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/16/fitted_over_haar_max/Q_W"
+   },
+   "value": 1.2080874411990912
+  },
+  "matched_whitened_over_haar_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the whitened carrier over the best random subspace at rank 32",
+   "rendered": "1.120",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/32/fitted_over_haar_max/Q_W"
+   },
+   "value": 1.1198570973866728
+  },
+  "matched_whitened_over_haar_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the whitened carrier over the best random subspace at rank 64",
+   "rendered": "1.142",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/64/fitted_over_haar_max/Q_W"
+   },
+   "value": 1.1421096051267434
+  },
+  "matched_whitened_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the whitened carrier at rank 16",
+   "rendered": "0.1345",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/16/fitted/Q_W/gain"
+   },
+   "value": 0.13450221197847664
+  },
+  "matched_whitened_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the whitened carrier at rank 32",
+   "rendered": "0.1591",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/32/fitted/Q_W/gain"
+   },
+   "value": 0.15906719598002936
+  },
+  "matched_whitened_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the whitened carrier at rank 64",
+   "rendered": "0.1926",
+   "source": {
+    "file": "post_review:rank_matched_haar.json",
+    "pointer": "evidence/by_rank/64/fitted/Q_W/gain"
+   },
+   "value": 0.19255619503592428
+  },
+  "metric_concordance_fraction": {
+   "digits": 2,
+   "kind": "number",
+   "note": "the share of the attainable ceiling the two metrics had to reach",
+   "rendered": "0.80",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/thresholds/metric_concordance_fraction"
+   },
+   "value": 0.8
+  },
+  "noop_max_difference": {
+   "digits": 4,
+   "kind": "number",
+   "note": "largest absolute difference in the no-op control, which must be zero",
+   "rendered": "0",
+   "source": {
+    "file": "capture:capture_health.json",
+    "pointer": "evidence/noop_absolute_maximum_difference"
+   },
+   "value": 0.0
+  },
+  "null_replicates": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "association-destroying null replicates behind every stability p-value",
+   "rendered": "400",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/nulls/association_destruction_replicates"
+   },
+   "value": 400
+  },
+  "overlap_r1_reference": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "documents in the first earlier pool checked against",
+   "rendered": "2,400",
+   "source": {
+    "file": "capture:disjointness_proof.json",
+    "pointer": "evidence/per_reference/r1_confirmatory_and_sealed/reference_documents"
+   },
+   "value": 2400
+  },
+  "overlap_r22_reference": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "documents in the second earlier pool, recovered by replaying its construction",
+   "rendered": "2,000",
+   "source": {
+    "file": "capture:disjointness_proof.json",
+    "pointer": "evidence/per_reference/r2_2_pool_replayed/reference_documents"
+   },
+   "value": 2000
+  },
+  "overlap_total": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "documents shared with either earlier pool",
+   "rendered": "0",
+   "source": {
+    "file": "capture:disjointness_proof.json",
+    "pointer": "evidence/total_overlap"
+   },
+   "value": 0
+  },
+  "p_scope_compact_rank": {
+   "digits": 2,
+   "kind": "number",
+   "note": "the rank at which compact prediction is in fact attained, by the co-reported estimator",
+   "rendered": "16",
+   "source": {
+    "file": "post_review:p_axis_scope.json",
+    "pointer": "evidence/compact_prediction_is_attained_at_rank"
+   },
+   "value": 16.0
+  },
+  "p_scope_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "what the frozen no-compression label does and does not state",
+   "rendered": "P0_IS_A_SATURATION_STATEMENT_NOT_AN_IMPOSSIBILITY",
+   "source": {
+    "file": "post_review:p_axis_scope.json",
+    "pointer": "label"
+   },
+   "value": "P0_IS_A_SATURATION_STATEMENT_NOT_AN_IMPOSSIBILITY"
+  },
+  "pca16_deleted_variance": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the aperture variance those 16 directions hold",
+   "rendered": "0.6668",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/families/A_pca_1_16/deleted_variance"
+   },
+   "value": 0.6667782075670996
+  },
+  "pca16_surviving_fraction": {
+   "digits": 4,
+   "kind": "number",
+   "note": "that survival as a share of the full-aperture gain",
+   "rendered": "0.2395",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/families/A_pca_1_16/surviving_fraction_multi_horizon"
+   },
+   "value": 0.23954987302875957
+  },
+  "pca16_surviving_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what survives deleting the top 16 variance directions",
+   "rendered": "0.05072",
+   "source": {
+    "file": "confirm:preflight/confirm_deletion_replay.json",
+    "pointer": "evidence/families/A_pca_1_16/multi_horizon_gain/gamma_augmented"
+   },
+   "value": 0.05072106040478995
+  },
+  "primary_best_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain at the largest rank in the grid",
+   "rendered": "0.1926",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/best_gain_within_grid"
+   },
+   "value": 0.19255619503592428
+  },
+  "primary_bootstrap_q05": {
+   "digits": 4,
+   "kind": "number",
+   "note": "lower bootstrap bound on the primary carrier's gain",
+   "rendered": "0.1816",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/Q_W_r64/bootstrap/gamma_augmented/q05"
+   },
+   "value": 0.18156999236908186
+  },
+  "primary_bootstrap_q95": {
+   "digits": 4,
+   "kind": "number",
+   "note": "upper bootstrap bound on the primary carrier's gain",
+   "rendered": "0.2039",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/Q_W_r64/bootstrap/gamma_augmented/q95"
+   },
+   "value": 0.2039261556198429
+  },
+  "primary_bootstrap_se": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's bootstrap standard error over validation documents",
+   "rendered": "0.006857",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/Q_W_r64/bootstrap/gamma_augmented/standard_error"
+   },
+   "value": 0.006857245105513326
+  },
+  "primary_ceiling_fraction": {
+   "digits": 4,
+   "kind": "number",
+   "note": "split-half agreement as a share of that ceiling",
+   "rendered": "0.7247",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/stability/Q_W/fraction_of_attainable_ceiling"
+   },
+   "value": 0.7246503181007189
+  },
+  "primary_ceiling_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the agreement a carrier reaches with itself under document resampling",
+   "rendered": "0.4975",
+   "source": {
+    "file": "confirm:stability/confirm_stability.json",
+    "pointer": "evidence/estimators/Q_W/bootstrap_ceiling/64/mean"
+   },
+   "value": 0.4974634995014579
+  },
+  "primary_eta_rank_shared_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain relative to the same-family reference subspace of its own rank; above one, which is why that construction is not a bound",
+   "rendered": "1.030",
+   "source": {
+    "file": "confirm:carriers/confirm_rank_curves.json",
+    "pointer": "evidence/rank_curves/Q_W/64/eta_rank_shared"
+   },
+   "value": 1.0302022194283977
+  },
+  "primary_gain_r1": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain at rank 1",
+   "rendered": "0.06689",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/rank_curve/1"
+   },
+   "value": 0.06688981704601729
+  },
+  "primary_gain_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain at rank 16",
+   "rendered": "0.1345",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/rank_curve/16"
+   },
+   "value": 0.13450221197847664
+  },
+  "primary_gain_r2": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain at rank 2",
+   "rendered": "0.07701",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/rank_curve/2"
+   },
+   "value": 0.077010672229417
+  },
+  "primary_gain_r32": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain at rank 32",
+   "rendered": "0.1591",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/rank_curve/32"
+   },
+   "value": 0.15906719598002936
+  },
+  "primary_gain_r4": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain at rank 4",
+   "rendered": "0.09082",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/rank_curve/4"
+   },
+   "value": 0.09082499958730092
+  },
+  "primary_gain_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain at rank 64",
+   "rendered": "0.1926",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/rank_curve/64"
+   },
+   "value": 0.19255619503592428
+  },
+  "primary_gain_r8": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain at rank 8",
+   "rendered": "0.1122",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/rank_curve/8"
+   },
+   "value": 0.11219010162385845
+  },
+  "primary_minus_complement": {
+   "derivation": {
+    "formula": "difference",
+    "inputs": [
+     "primary_best_gain",
+     "complement_gain"
+    ]
+   },
+   "digits": 4,
+   "kind": "number",
+   "note": "how much the complement carrier falls short of the primary",
+   "rendered": "0.01721",
+   "value": 0.01720502162607962
+  },
+  "primary_null_max": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the largest agreement reached when the association is destroyed",
+   "rendered": "0.3073",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/stability/Q_W/null_max"
+   },
+   "value": 0.3072652139845546
+  },
+  "primary_null_max_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the largest split-half agreement any association-destroying refit reached",
+   "rendered": "0.3073",
+   "source": {
+    "file": "confirm:stability/confirm_stability.json",
+    "pointer": "evidence/estimators/Q_W/null/64/max"
+   },
+   "value": 0.3072652139845546
+  },
+  "primary_over_haar": {
+   "derivation": {
+    "formula": "ratio",
+    "inputs": [
+     "primary_best_gain",
+     "comparator_haar_0"
+    ]
+   },
+   "digits": 4,
+   "kind": "number",
+   "note": "the fitted carrier against a random subspace of the same rank",
+   "rendered": "1.166",
+   "value": 1.16611337763631
+  },
+  "primary_over_variance": {
+   "derivation": {
+    "formula": "ratio",
+    "inputs": [
+     "primary_best_gain",
+     "comparator_variance_gain"
+    ]
+   },
+   "digits": 4,
+   "kind": "number",
+   "note": "the fitted carrier against the plain variance basis of the same rank",
+   "rendered": "0.9337",
+   "value": 0.9336515027256992
+  },
+  "primary_r90": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "the smallest rank reaching 90 percent of the largest-rank gain",
+   "rendered": "64",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/r90"
+   },
+   "value": 64
+  },
+  "primary_rank": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "the rank the primary estimator was frozen at",
+   "rendered": "64",
+   "source": {
+    "file": "confirm:confirmation/final_labels.json",
+    "pointer": "evidence/frozen_ranks/Q_W"
+   },
+   "value": 64
+  },
+  "primary_share_of_aperture": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's share of what the whole aperture predicts, at the rank the run freezes (64); the validation_freeze field of the same name was filled at rank 16 by a defect corrected in 04_confirm.py after the run",
+   "rendered": "0.9094",
+   "source": {
+    "file": "confirm:carriers/confirm_rank_curves.json",
+    "pointer": "evidence/rank_curves/Q_W/64/eta_global_multi_horizon"
+   },
+   "value": 0.9094212877970635
+  },
+  "primary_share_of_aperture_at_r16": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's aperture share at rank 16, for the rank-by-rank comparison against the energy carrier",
+   "rendered": "0.6352",
+   "source": {
+    "file": "confirm:carriers/confirm_rank_curves.json",
+    "pointer": "evidence/rank_curves/Q_W/16/eta_global_multi_horizon"
+   },
+   "value": 0.6352388444640764
+  },
+  "primary_split_half": {
+   "digits": 4,
+   "kind": "number",
+   "note": "agreement between carriers fitted on two disjoint halves",
+   "rendered": "0.3605",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/stability/Q_W/observed_split_half_msc"
+   },
+   "value": 0.36048708315722827
+  },
+  "primary_split_half_r64": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's split-half agreement at its frozen rank",
+   "rendered": "0.3605",
+   "source": {
+    "file": "confirm:stability/confirm_stability.json",
+    "pointer": "evidence/estimators/Q_W/split_half/64/mean_subspace_correlation"
+   },
+   "value": 0.36048708315722827
+  },
+  "primary_stability_ceiling": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the within-half ceiling the split-half agreement is judged against",
+   "rendered": "0.4975",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/stability/Q_W/bootstrap_self_overlap_mean"
+   },
+   "value": 0.4974634995014579
+  },
+  "primary_stability_p": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the finest p-value 400 null replicates can express",
+   "rendered": "0.002494",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/stability/Q_W/empirical_p_value"
+   },
+   "value": 0.0024937655860349127
+  },
+  "primary_stability_position": {
+   "derivation": {
+    "formula": "null_to_ceiling_position",
+    "inputs": [
+     "primary_split_half_r64",
+     "primary_null_max_r64",
+     "primary_ceiling_r64"
+    ]
+   },
+   "digits": 3,
+   "kind": "number",
+   "note": "where the primary carrier's agreement sits between the null and the ceiling",
+   "rendered": "0.280",
+   "value": 0.27982307531338785
+  },
+  "primary_threshold": {
+   "digits": 4,
+   "kind": "number",
+   "note": "90 percent of the primary carrier's largest-rank gain",
+   "rendered": "0.1733",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/compression/Q_W/evidence/threshold"
+   },
+   "value": 0.17330057553233186
+  },
+  "promotion_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "whether the sealed read reproduced the frozen result",
+   "rendered": "CONFIRMATORY_REPRODUCTION",
+   "source": {
+    "file": "confirm:confirmation/test_metrics.json",
+    "pointer": "evidence/promotion/label"
+   },
+   "value": "CONFIRMATORY_REPRODUCTION"
+  },
+  "rank_audit_correct_value": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the aperture share at the estimator's own frozen rank",
+   "rendered": "0.9094",
+   "source": {
+    "file": "post_review:rank_index_audit.json",
+    "pointer": "evidence/correct_share_at_the_frozen_rank"
+   },
+   "value": 0.9094212877970635
+  },
+  "rank_audit_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "the outcome of the rank-index audit",
+   "rendered": "RANK_INDEX_DEFECT_ISOLATED",
+   "source": {
+    "file": "post_review:rank_index_audit.json",
+    "pointer": "label"
+   },
+   "value": "RANK_INDEX_DEFECT_ISOLATED"
+  },
+  "rank_audit_stale_value": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the value the frozen label record carried for the aperture share",
+   "rendered": "0.6352",
+   "source": {
+    "file": "post_review:rank_index_audit.json",
+    "pointer": "evidence/value_in_the_frozen_label_record"
+   },
+   "value": 0.6352388444640764
+  },
+  "redundancy_high": {
+   "digits": 2,
+   "kind": "number",
+   "note": "the share above which the carrier family is called redundant",
+   "rendered": "0.50",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/thresholds/redundancy_relative_high"
+   },
+   "value": 0.5
+  },
+  "redundancy_null_label": {
+   "digits": 4,
+   "kind": "label",
+   "note": "whether the redundancy label survives the control the threshold lacked",
+   "rendered": "REDUNDANT_CARRIER_FAMILY_SURVIVES_ITS_NULL",
+   "source": {
+    "file": "post_review:redundancy_against_its_null.json",
+    "pointer": "label"
+   },
+   "value": "REDUNDANT_CARRIER_FAMILY_SURVIVES_ITS_NULL"
+  },
+  "ridge_min_adjacent": {
+   "digits": 4,
+   "kind": "number",
+   "note": "worst agreement one decade away in ridge",
+   "rendered": "0.6325",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/ridge_axis/evidence/min_msc_adjacent_decade"
+   },
+   "value": 0.6325250380930977
+  },
+  "ridge_min_over_grid": {
+   "digits": 4,
+   "kind": "number",
+   "note": "worst agreement with the selected carrier across the whole ridge grid",
+   "rendered": "0.4517",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/ridge_axis/evidence/min_msc_over_grid"
+   },
+   "value": 0.45165075604492344
+  },
+  "ridge_requirement": {
+   "digits": 2,
+   "kind": "number",
+   "note": "the agreement a ridge-independent carrier had to hold",
+   "rendered": "0.80",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/thresholds/ridge_stability_min"
+   },
+   "value": 0.8
+  },
+  "selected_rho": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the operator ridge chosen by cross-validation on fit documents",
+   "rendered": "0.1000",
+   "source": {
+    "file": "confirm:confirmation/validation_freeze.json",
+    "pointer": "evidence/ridge_axis/evidence/selected_rho"
+   },
+   "value": 0.1
+  },
+  "sizing_documents": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "the confirmatory sample size the frozen rule selected",
+   "rendered": "2,000",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/sizing/decision/chosen_documents"
+   },
+   "value": 2000
+  },
+  "sizing_r_squared": {
+   "digits": 4,
+   "kind": "number",
+   "note": "how well that inverse-sample-size form fits",
+   "rendered": "0.5864",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/sizing/decision/msc_curve_fit/r_squared"
+   },
+   "value": 0.5864102504998834
+  },
+  "sizing_se_at_choice": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the gain standard error the rule predicted at that size",
+   "rendered": "0.005236",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/sizing/decision/candidates/2000/predicted_gain_standard_error"
+   },
+   "value": 0.005236370660371571
+  },
+  "sizing_se_limit": {
+   "digits": 2,
+   "kind": "number",
+   "note": "the standard-error limit the rule required",
+   "rendered": "0.010",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/thresholds/sizing_se_max"
+   },
+   "value": 0.01
+  },
+  "sizing_slope": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the fitted slope of agreement against inverse sample size",
+   "rendered": "-7.871",
+   "source": {
+    "file": "frozen:frozen_r2_4.json",
+    "pointer": "evidence/sizing/decision/msc_curve_fit/slope_b"
+   },
+   "value": -7.870503199669781
+  },
+  "test_documents": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "documents in the sealed test split",
+   "rendered": "310",
+   "source": {
+    "file": "confirm:confirmation/test_metrics.json",
+    "pointer": "evidence/test_documents"
+   },
+   "value": 310
+  },
+  "test_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the primary carrier's gain on the sealed test documents",
+   "rendered": "0.2047",
+   "source": {
+    "file": "confirm:confirmation/test_metrics.json",
+    "pointer": "evidence/promotion/evidence/checks/multi_horizon_gain/test"
+   },
+   "value": 0.20467665537532045
+  },
+  "test_gain_ratio": {
+   "digits": 4,
+   "kind": "number",
+   "note": "test over validation",
+   "rendered": "1.063",
+   "source": {
+    "file": "confirm:confirmation/test_metrics.json",
+    "pointer": "evidence/promotion/evidence/checks/multi_horizon_gain/ratio"
+   },
+   "value": 1.062945055271449
+  },
+  "test_gain_required": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the reproduction floor, three quarters of the validation value",
+   "rendered": "0.1444",
+   "source": {
+    "file": "confirm:confirmation/test_metrics.json",
+    "pointer": "evidence/promotion/evidence/checks/multi_horizon_gain/required"
+   },
+   "value": 0.14441714627694321
+  },
+  "test_geometry": {
+   "digits": 4,
+   "kind": "number",
+   "note": "agreement between the frozen carrier and one refitted on test documents",
+   "rendered": "0.3639",
+   "source": {
+    "file": "confirm:confirmation/test_metrics.json",
+    "pointer": "evidence/promotion/evidence/checks/split_half_msc/test"
+   },
+   "value": 0.36390856229722734
+  },
+  "test_geometry_ratio": {
+   "digits": 4,
+   "kind": "number",
+   "note": "test over validation for the geometry check",
+   "rendered": "0.9783",
+   "source": {
+    "file": "confirm:confirmation/test_metrics.json",
+    "pointer": "evidence/promotion/evidence/checks/split_half_msc/ratio"
+   },
+   "value": 0.9782952417906209
+  },
+  "test_reads": {
+   "digits": 4,
+   "kind": "integer",
+   "note": "how many times the test split was read",
+   "rendered": "1",
+   "source": {
+    "file": "confirm:confirmation/test_access_counter.json",
+    "pointer": "reads"
+   },
+   "value": 1
+  },
+  "validation_gain": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the same quantity on validation documents, fixed before the test read",
+   "rendered": "0.1926",
+   "source": {
+    "file": "confirm:confirmation/test_metrics.json",
+    "pointer": "evidence/promotion/evidence/checks/multi_horizon_gain/validation"
+   },
+   "value": 0.19255619503592428
+  },
+  "validation_geometry": {
+   "digits": 4,
+   "kind": "number",
+   "note": "the validation analogue, fixed before the test read",
+   "rendered": "0.3720",
+   "source": {
+    "file": "confirm:confirmation/test_metrics.json",
+    "pointer": "evidence/promotion/evidence/checks/split_half_msc/validation"
+   },
+   "value": 0.37198234924576346
+  },
+  "variance_bootstrap_q05": {
+   "digits": 4,
+   "kind": "number",
+   "note": "lower bootstrap bound on the variance basis's gain",
+   "rendered": "0.1949",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/variance_r64/bootstrap/gamma_augmented/q05"
+   },
+   "value": 0.19494882881319814
+  },
+  "variance_bootstrap_q95": {
+   "digits": 4,
+   "kind": "number",
+   "note": "upper bootstrap bound on the variance basis's gain",
+   "rendered": "0.2175",
+   "source": {
+    "file": "confirm:comparators/confirm_comparators.json",
+    "pointer": "evidence/carriers/variance_r64/bootstrap/gamma_augmented/q95"
+   },
+   "value": 0.21751446165798521
+  },
+  "variance_share_of_aperture": {
+   "derivation": {
+    "formula": "ratio",
+    "inputs": [
+     "comparator_variance_gain",
+     "full_aperture_gain"
+    ]
+   },
+   "digits": 4,
+   "kind": "number",
+   "note": "what the top-variance basis recovers of the whole aperture",
+   "rendered": "0.9740",
+   "value": 0.9740479023940967
+  },
+  "wall_seconds": {
+   "digits": 4,
+   "kind": "number",
+   "note": "confirmatory run wall time in seconds",
+   "rendered": "1627",
+   "source": {
+    "file": "confirm:decisions/confirm_run_summary.json",
+    "pointer": "wall_seconds"
+   },
+   "value": 1627.1887691020966
+  },
+  "whitened_aperture_share": {
+   "digits": 4,
+   "kind": "number",
+   "note": "what the primary carrier recovers of the whole aperture at its frozen rank",
+   "rendered": "0.9094",
+   "source": {
+    "file": "post_review:g_axis_adjudication.json",
+    "pointer": "evidence/per_estimator_p_axis_verdict/Q_W/aperture_share_at_its_own_r90"
+   },
+   "value": 0.9094212877970635
+  },
+  "whitened_label_alone": {
+   "digits": 4,
+   "kind": "label",
+   "note": "what the whitened estimator says on its own",
+   "rendered": "P0_NO_COMPACT_PREDICTIVE_COMPRESSION",
+   "source": {
+    "file": "post_review:g_axis_adjudication.json",
+    "pointer": "evidence/per_estimator_p_axis_verdict/Q_W/label_if_read_alone"
+   },
+   "value": "P0_NO_COMPACT_PREDICTIVE_COMPRESSION"
+  }
+ },
+ "confirm_run": "results/confirm/r2_4_confirm_main",
+ "dev_run": "results/dev/r2_4_dev_a13",
+ "frozen_record": "/srv/silico-state/_shared/silico/experiments/exp_01kzve2q98en28b5g7wefp6sax/worktree/experiments/experiment-6-fp6sax/results/frozen_r2_4.json",
+ "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified"
+}

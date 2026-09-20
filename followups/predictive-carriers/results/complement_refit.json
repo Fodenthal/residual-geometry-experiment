@@ -1,0 +1,169 @@
+{
+  "evidence": {
+    "complement_compression": {
+      "evidence": {
+        "best_gain_within_grid": 0.1856820564069966,
+        "compression_fraction": 0.9,
+        "fraction_of_full_aperture_ceiling_at_r90": null,
+        "note": "the 90% number is a compression summary, not a significance threshold; the full rank curve is reported beside this label",
+        "r90": 32,
+        "rank_curve": {
+          "1": 0.06626068181826059,
+          "2": 0.07647808645248766,
+          "4": 0.09085743469371534,
+          "8": 0.11274485145856462,
+          "16": 0.135235919289928,
+          "32": 0.17535117340984466,
+          "64": 0.1856820564069966
+        },
+        "threshold": 0.16711385076629692
+      },
+      "label": "P1_COMPACT_PREDICTIVE_COMPRESSION",
+      "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+      "r90": 32,
+      "specification_section": "R2.4 source section 13 (independent result axes)"
+    },
+    "complement_rank": 32,
+    "complement_rank_curve": {
+      "1": {
+        "multi_horizon_mean": {
+          "gamma_augmented": 0.06626068181826059,
+          "gamma_raw": 0.056720560290668,
+          "gamma_white": 0.0021772543182703706
+        },
+        "overlap_with_primary": 4.75482762930212e-33,
+        "relative_to_full_aperture": 0.3129417600832412,
+        "relative_to_primary": 0.34411088049334715
+      },
+      "16": {
+        "multi_horizon_mean": {
+          "gamma_augmented": 0.135235919289928,
+          "gamma_raw": 0.1906709724964534,
+          "gamma_white": 0.015168484379552514
+        },
+        "overlap_with_primary": 3.980272297044761e-32,
+        "relative_to_full_aperture": 0.6387040617110299,
+        "relative_to_primary": 0.7023192334305198
+      },
+      "2": {
+        "multi_horizon_mean": {
+          "gamma_augmented": 0.07647808645248766,
+          "gamma_raw": 0.07489946847481264,
+          "gamma_white": 0.003455235539987619
+        },
+        "overlap_with_primary": 2.331006519593178e-32,
+        "relative_to_full_aperture": 0.36119741489958673,
+        "relative_to_primary": 0.3971728172039311
+      },
+      "32": {
+        "multi_horizon_mean": {
+          "gamma_augmented": 0.17535117340984466,
+          "gamma_raw": 0.20634277663603467,
+          "gamma_white": 0.02127637436520888
+        },
+        "overlap_with_primary": 7.629562266414845e-32,
+        "relative_to_full_aperture": 0.8281639025394948,
+        "relative_to_primary": 0.9106493477248563
+      },
+      "4": {
+        "multi_horizon_mean": {
+          "gamma_augmented": 0.09085743469371534,
+          "gamma_raw": 0.10706390536274413,
+          "gamma_white": 0.006256864142997094
+        },
+        "overlap_with_primary": 2.570699188646596e-32,
+        "relative_to_full_aperture": 0.4291094620439542,
+        "relative_to_primary": 0.47184893052526566
+      },
+      "64": {
+        "multi_horizon_mean": {
+          "gamma_augmented": 0.1856820564069966,
+          "gamma_raw": 0.20655457268837435,
+          "gamma_white": 0.0283978998433063
+        },
+        "overlap_with_primary": 1.6154070309522602e-31,
+        "relative_to_full_aperture": 0.8769555029219073,
+        "relative_to_primary": 0.9643006103872939
+      },
+      "8": {
+        "multi_horizon_mean": {
+          "gamma_augmented": 0.11274485145856462,
+          "gamma_raw": 0.15286342433017888,
+          "gamma_white": 0.010359985886609526
+        },
+        "overlap_with_primary": 1.7842254969930138e-32,
+        "relative_to_full_aperture": 0.5324812737746893,
+        "relative_to_primary": 0.5855166147083991
+      }
+    },
+    "complement_stability": {
+      "bootstrap_self_overlap_mean": 0.4015802604810622,
+      "empirical_p_value": 0.0024937655860349127,
+      "fraction_of_attainable_ceiling": 0.6278215265448563,
+      "metric": "Q_W_complement",
+      "null_max": 0.21952405687155324,
+      "null_mean": 0.19848963305428094,
+      "null_q99": 0.2151180209535491,
+      "observed_split_half_msc": 0.2521207321655015,
+      "rank": 32,
+      "stable": true
+    },
+    "primary_carrier_deleted": {
+      "deleted_variance": 0.34175737787636357,
+      "surviving_fraction_of_full": 0.8454332801374952,
+      "surviving_gain": {
+        "gamma_augmented": 0.17900770277146175,
+        "gamma_raw": 0.1986293595154958,
+        "gamma_white": 0.07161594626364447
+      }
+    },
+    "primary_rank": 64,
+    "rank_matched_haar_deletions": [
+      {
+        "deleted_variance": 0.27514699222961764,
+        "index": 0,
+        "surviving_gain": 0.2017110615321036
+      },
+      {
+        "deleted_variance": 0.26407053580341616,
+        "index": 1,
+        "surviving_gain": 0.20068947086481922
+      },
+      {
+        "deleted_variance": 0.26780056173813827,
+        "index": 2,
+        "surviving_gain": 0.20402224017922602
+      },
+      {
+        "deleted_variance": 0.24133692794825834,
+        "index": 3,
+        "surviving_gain": 0.20271959819183752
+      },
+      {
+        "deleted_variance": 0.23295092312342938,
+        "index": 4,
+        "surviving_gain": 0.20281518310669913
+      },
+      {
+        "deleted_variance": 0.2569648636834276,
+        "index": 5,
+        "surviving_gain": 0.20228317616301733
+      },
+      {
+        "deleted_variance": 0.2551113516483271,
+        "index": 6,
+        "surviving_gain": 0.20152142812052456
+      },
+      {
+        "deleted_variance": 0.2676318478090564,
+        "index": 7,
+        "surviving_gain": 0.20123432707773894
+      }
+    ],
+    "step": "C6"
+  },
+  "evidential_status": "CONFIRMATORY_FRESH_POOL",
+  "label": "COMPLEMENT_REFIT_MEASURED",
+  "protocol_revision": "arm_d_r2_4_predictive_carrier_resolution_unified",
+  "specification_section": "R2.4 source section 13 (independent result axes)"
+}
